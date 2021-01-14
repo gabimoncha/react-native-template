@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeTemplate",
+  "name": "@gabrielmoncea/react-native-template",
   "version": "1.0.0",
   "description": "An opinionated template with all the packages that take more than one `yarn add` to setup",
   "keywords": [
@@ -30,5 +30,13 @@
     "sentry"
   ],
   "author": "Gabriel Moncea <gabimoncha@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielmoncea/react-native-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielmoncea/react-native-template/issues"
+  },
+  "homepage": "https://github.com/gabrielmoncea/react-native-template"
 }
