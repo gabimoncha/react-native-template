@@ -1,7 +1,6 @@
 {
   "name": "ReactNativeTemplate",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -78,7 +77,7 @@
     "*.{js, ts, tsx, json, md}": "prettier --write"
   },
   "main": "index.js",
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "gabimoncha@gmail.copm",
+  "license": "MIT",
+  "description": "An opinionated template with all the packages that take more than one yarn add to setup."
 }
