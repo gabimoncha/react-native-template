@@ -1,6 +1,6 @@
 {
   "name": "@gabrielmoncea/react-native-template",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "An opinionated template with all the packages that take more than one `yarn add` to setup",
   "keywords": [
     "react",
