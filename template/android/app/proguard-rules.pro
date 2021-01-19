@@ -18,6 +18,3 @@
   **[] $VALUES;
   public *;
 }
-
-# react-native-config
--keep class com.mypackage.BuildConfig { *; }
