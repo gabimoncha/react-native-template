@@ -46,21 +46,25 @@ $ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 
 ## Road Map
 
+- FileLogger
+- Push notifications
 - Finish Detox integration
 - [Codepush Code Signing](https://github.com/microsoft/code-push/tree/v3.0.1/cli#code-signing)
 - Automated builds and distribution with Fastland & Appcenter
 
 ## Optional Steps
 
-#### Connect To Sentry
+#### Setup Code Push
 
 1. You will need to have [AppCenter CLI](https://github.com/microsoft/appcenter-cli) installed
 
-1. After creating an AppCenter account and/or organization add an app with the React Native Platform selected
+1. Creating an AppCenter account and/or organization and create an app for each platform and environment
 
-1. Copy and Replace the CodePushDeploymentKey in android/app/src/main/res/values/strings.xml, ios/YourApp/Info.plist respectively
+1. Copy and Replace the CodePushDeploymentKey in android/app/build.gradle under `buildTypes`
 
-You can retrieve this value by running `appcenter codepush deployment list -a <ownerName>/<appName> -k`
+1. Copy and Replace the CodePushDeploymentKey in android/app/build.gradle and XCode -> YourProject -> Build Settings -> `CODE_PUSH_KEY`
+
+You can retrieve this values by running `appcenter codepush deployment list -a <ownerName>/<appName> -k`
 
 #### Connect To Sentry
 

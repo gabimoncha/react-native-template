@@ -1,5 +1,4 @@
 apply plugin: "com.android.application"
-apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 import com.android.build.OutputFile
 
@@ -170,12 +169,20 @@ android {
         debug {
             signingConfig signingConfigs.debug
         }
+        releaseStaging {
+            // Caution! In production, you need to generate your own keystore file.
+            // see https://reactnative.dev/docs/signed-apk-android.
+            resValue "string", "CodePushDeploymentKey", '"<INSERT_STAGING_KEY>"'
+            matchingFallbacks = ['release']
+            signingConfig signingConfigs.release
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
-            // Uncomment below to use the release signing config.
-            // signingConfig signingConfigs.release
+            resValue "string", "CodePushDeploymentKey", '"<INSERT_PRODUCTION_KEY>"'
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
