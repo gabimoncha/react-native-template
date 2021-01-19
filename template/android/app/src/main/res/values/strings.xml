@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ReactNativeTemplate</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">deployment-key-here</string>
 </resources>

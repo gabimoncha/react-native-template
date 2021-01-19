@@ -10,9 +10,10 @@ Preconfigured with
 - [styled-components](https://github.com/styled-components/styled-components)
 - [styled-system](https://github.com/styled-system/styled-system)
 - [React Navigation](https://reactnavigation.org/) (**v5**) for navigation.
+- [Code Push](https://github.com/microsoft/react-native-code-push) syncronize JavaScript and Images with over-the-air updates
 - [Sentry](https://github.com/getsentry/sentry-react-native) for debugging in production.
 - [react-native-svg](https://github.com/react-native-community/react-native-svg) because svg.
-- react-native-dotenv
+- [react-native-dotenv](https://github.com/goatandsheep/react-native-dotenv)
 - [AsyncStorage](https://github.com/react-native-community/async-storage) you're gonna install it anyway.
 - [NetInfo](https://github.com/react-native-netinfo/react-native-netinfo) Network Info API for Android, iOS, macOS & Windows
 - [FastImage](https://github.com/DylanVann/react-native-fast-image) its more performant
@@ -22,6 +23,7 @@ Preconfigured with
 
 - [Documentation](#documentation)
 - [Getting Started](#getting-started)
+- [Road Map](#road-map)
 - [Optional Steps](#optional-steps)
 - [Credits](#credits)
 
@@ -29,8 +31,6 @@ Preconfigured with
 
 - [Libraries](#libraries)
 - [Directory Structure](#directory-structure)
-- [Quick Overview](#quick-overview)
-- [File Walkthrough](./docs/file-walkthrough.md)
 
 ## Getting Started
 
@@ -44,7 +44,23 @@ Create a new project using the template.
 $ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 ```
 
+## Road Map
+
+- Finish Detox integration
+- [Codepush Code Signing](https://github.com/microsoft/code-push/tree/v3.0.1/cli#code-signing)
+- Automated builds and distribution with Fastland & Appcenter
+
 ## Optional Steps
+
+#### Connect To Sentry
+
+1. You will need to have [AppCenter CLI](https://github.com/microsoft/appcenter-cli) installed
+
+1. After creating an AppCenter account and/or organization add an app with the React Native Platform selected
+
+1. Copy and Replace the CodePushDeploymentKey in android/app/src/main/res/values/strings.xml, ios/YourApp/Info.plist respectively
+
+You can retrieve this value by running `appcenter codepush deployment list -a <ownerName>/<appName> -k`
 
 #### Connect To Sentry
 
@@ -93,6 +109,12 @@ Styled System is a collection of utility functions that add style props to your 
 ### React Navigation
 
 Routing and navigation for your React Native apps Platform-specific look-and-feel with smooth animations and gestures.
+
+### Codepush
+
+A React Native app is composed of JavaScript files and any accompanying images, which are bundled together by the packager and distributed as part of a platform-specific binary (i.e. an .ipa or .apk file). Once the app is released, updating either the JavaScript code (e.g. making bug fixes, adding new features) or image assets, requires you to recompile and redistribute the entire binary, which of course, includes any review time associated with the store(s) you are publishing to.
+
+The CodePush plugin helps get product improvements in front of your end users instantly, by keeping your JavaScript and images synchronized with updates you release to the CodePush server. This way, your app gets the benefits of an offline mobile experience, as well as the "web-like" agility of side-loading updates as soon as they are available. It's a win-win!
 
 ### Sentry
 
