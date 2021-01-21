@@ -1,0 +1,9 @@
+{
+  "hello": "Salutări lumea React Native!",
+  "no_internet": "Nu aveți conexiune la internet",
+  "check_connection": "Vă rugăm să verificați setările conexiunii la internet și să încercați din nou.",
+  "languages": {
+    "en": "Engleză",
+    "ro": "Română"
+  }
+}

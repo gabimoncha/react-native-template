@@ -20,6 +20,7 @@ module.exports = {
         alias: {
           assets: './assets',
           components: './src/components',
+          localization: './src/localization',
           navigation: './src/navigation',
           screens: './src/screens',
           utils: './src/utils',

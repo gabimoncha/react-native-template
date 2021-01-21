@@ -1,0 +1,9 @@
+{
+  "hello": "Hello React Native World!",
+  "no_internet": "No internet connection",
+  "check_connection": "Please check your internet connection settings and try again.",
+  "languages": {
+    "en": "English",
+    "ro": "Romanian"
+  }
+}

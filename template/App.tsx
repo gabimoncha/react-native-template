@@ -11,6 +11,7 @@ import {
   useNavigationMounting,
 } from 'navigation/RootNavigation';
 import { log } from 'utils/console';
+import 'localization';
 import Router from 'navigation/Router';
 import { enableScreens } from 'react-native-screens';
 import { SENTRY_DSN, ENV } from '@env';
