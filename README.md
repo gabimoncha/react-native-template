@@ -10,6 +10,7 @@ Preconfigured with
 - [styled-components](https://github.com/styled-components/styled-components)
 - [styled-system](https://github.com/styled-system/styled-system)
 - [React Navigation](https://reactnavigation.org/) (**v5**) for navigation.
+- [react-i18next](https://github.com/i18next/react-i18next) internationalization.
 - [Code Push](https://github.com/microsoft/react-native-code-push) syncronize JavaScript and Images with over-the-air updates
 - [Sentry](https://github.com/getsentry/sentry-react-native) for debugging in production.
 - [react-native-svg](https://github.com/react-native-community/react-native-svg) because svg.
@@ -113,6 +114,10 @@ Styled System is a collection of utility functions that add style props to your 
 ### React Navigation
 
 Routing and navigation for your React Native apps Platform-specific look-and-feel with smooth animations and gestures.
+
+### React Navigation
+
+Localization using hooks. [React Native example](https://github.com/i18next/react-i18next/tree/master/example/react-native)
 
 ### Codepush
 
