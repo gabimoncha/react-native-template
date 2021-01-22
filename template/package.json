@@ -66,7 +66,8 @@
   "jest": {
     "setupFiles": [
       "./jest.setup.js",
-      "./node_modules/react-native-gesture-handler/jestSetup.js"
+      "./node_modules/react-native-gesture-handler/jestSetup.js",
+      "./node_modules/react-native/jest/setup.js"
     ],
     "preset": "react-native",
     "moduleFileExtensions": [

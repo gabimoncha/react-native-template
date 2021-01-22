@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import CustomText from 'components/CustomText';
 import Smile from 'assets/smile.svg';
-import LanguageButton from 'src/components/LanguageButton';
+import LanguageButton from 'components/LanguageButton';
 
 const Home: React.FC = () => (
   <Container>

@@ -12,14 +12,10 @@ const getDeviceLocale = (): string => {
       SettingsManager: { settings },
     } = NativeModules;
 
-    locale = settings.AppleLocale || settings.AppleLanguages[0] || 'de';
-  } else {
+    locale = settings.AppleLocale || settings.AppleLanguages[0] || 'en';
+  } else if (Platform.OS === 'android') {
     locale = NativeModules.I18nManager.localeIdentifier;
-  }
-
-  if (Platform.OS === 'android') {
-    return NativeModules.I18nManager.localeIdentifier;
-  }
+  } else locale = 'en'
 
   const [language] = locale.replace('_', '-').split('-'); // returned device locale can have '_' or '-'
 
