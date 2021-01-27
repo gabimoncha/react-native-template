@@ -1,9 +1,13 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target 'ReactNativeTemplate' do
+  # Pods for your app
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Notifications', :path => "#{permissions_path}/Notifications"
+
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])

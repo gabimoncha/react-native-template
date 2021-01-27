@@ -17,6 +17,7 @@ import { enableScreens } from 'react-native-screens';
 import { SENTRY_DSN, ENV } from '@env';
 import * as Sentry from '@sentry/react-native';
 import codePush, { CodePushOptions } from 'react-native-code-push';
+import NotificationManager from 'components/NotificationManager';
 
 enableScreens();
 
@@ -57,10 +58,12 @@ const App = () => {
   }, [isConnected]);
 
   return (
-    <NavigationContainer linking={linking} ref={navigationRef}>
-      <StatusBar barStyle="dark-content" />
-      <Router />
-    </NavigationContainer>
+    <NotificationManager>
+      <NavigationContainer linking={linking} ref={navigationRef}>
+        <StatusBar barStyle="dark-content" />
+        <Router />
+      </NavigationContainer>
+    </NotificationManager>
   );
 };
 

@@ -9,7 +9,9 @@ Preconfigured with
 - [Zustand](https://github.com/pmndrs/zustand) instead of Redux
 - [styled-components](https://github.com/styled-components/styled-components)
 - [styled-system](https://github.com/styled-system/styled-system)
-- [React Navigation](https://reactnavigation.org/) (**v5**) for navigation.
+- [React Navigation](https://reactnavigation.org/) for navigation and deeplinking.
+- [Wix React Native Notifications](https://github.com/wix/react-native-notifications) native notifications.
+- [react-native-permissions](https://github.com/zoontek/react-native-permissions) unified permissions api for iOS and Android.
 - [react-i18next](https://github.com/i18next/react-i18next) internationalization.
 - [Code Push](https://github.com/microsoft/react-native-code-push) syncronize JavaScript and Images with over-the-air updates
 - [Sentry](https://github.com/getsentry/sentry-react-native) for debugging in production.
@@ -48,12 +50,15 @@ $ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 ## Road Map
 
 - FileLogger
-- Push notifications
 - Finish Detox integration
 - [Codepush Code Signing](https://github.com/microsoft/code-push/tree/v3.0.1/cli#code-signing)
 - Automated builds and distribution with Fastland & Appcenter
 
 ## Optional Steps
+
+#### Customize notification appearance on Android.
+
+Starting Android 10 (API 29), notification icons should be glyphs. You need to follow this step to [customize the notification appearance](https://wix.github.io/react-native-notifications/docs/installation-android/#step-6-customize-the-appearance).
 
 #### Setup Code Push
 
@@ -115,7 +120,15 @@ Styled System is a collection of utility functions that add style props to your 
 
 Routing and navigation for your React Native apps Platform-specific look-and-feel with smooth animations and gestures.
 
-### React Navigation
+### Wix React Native Notifications
+
+Handle all the aspects of push notifications for your app, including remote and local notifications, interactive notifications, silent notifications, and more.
+
+### react-native-permissions
+
+A unified permissions API for React Native on iOS and Android. For iOS you have to the `Podfile` with permissions pod and update `Info.plist` with wanted permissions descriptions. For Android add wanted permissions in `AndroidManifest.xml`
+
+### react-i18next
 
 Localization using hooks. [React Native example](https://github.com/i18next/react-i18next/tree/master/example/react-native)
 
