@@ -14,12 +14,18 @@ import { log } from 'utils/console';
 import 'localization';
 import Router from 'navigation/Router';
 import { enableScreens } from 'react-native-screens';
+import { FileLogger } from 'react-native-file-logger';
 import { SENTRY_DSN, ENV } from '@env';
 import * as Sentry from '@sentry/react-native';
 import codePush, { CodePushOptions } from 'react-native-code-push';
 import NotificationManager from 'components/NotificationManager';
 
 enableScreens();
+
+FileLogger.configure({
+  maximumFileSize: 1024 * 1024 * 5, // 5MB,
+  maximumNumberOfFiles: 3,
+});
 
 log({ ENV, SENTRY_DSN });
 

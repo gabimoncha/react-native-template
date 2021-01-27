@@ -15,6 +15,7 @@ Preconfigured with
 - [react-i18next](https://github.com/i18next/react-i18next) internationalization.
 - [Code Push](https://github.com/microsoft/react-native-code-push) syncronize JavaScript and Images with over-the-air updates
 - [Sentry](https://github.com/getsentry/sentry-react-native) for debugging in production.
+- [react-native-file-logger](https://github.com/BeTomorrow/react-native-file-logger) to log important stuff.
 - [react-native-svg](https://github.com/react-native-community/react-native-svg) because svg.
 - [react-native-dotenv](https://github.com/goatandsheep/react-native-dotenv)
 - [AsyncStorage](https://github.com/react-native-community/async-storage) you're gonna install it anyway.
@@ -49,7 +50,6 @@ $ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 
 ## Road Map
 
-- FileLogger
 - Finish Detox integration
 - [Codepush Code Signing](https://github.com/microsoft/code-push/tree/v3.0.1/cli#code-signing)
 - Automated builds and distribution with Fastland & Appcenter
@@ -105,6 +105,11 @@ $ npx sentry-wizard -i reactNative -p android
 
 Insert your sentry DSN in each [.env](https://github.com/osamaq/react-native-template/blob/ed37c213eacf0681c4f50f959bad170d46be0ed7/template/.env.prod#L5) file (dev, staging and production) and you're all done.
 
+#### Add project email for the FileLogger
+
+Update project email used by `sendLoggedFiles` method in `Home.tsx`
+
+
 ## Libraries
 
 Let's briefly go over the benefit of each library included in this template.
@@ -156,6 +161,10 @@ The CodePush plugin helps get product improvements in front of your end users in
 ### Sentry
 
 Benefitial in debugging issues that occur only in release builds. You can view error stack traces for unhandled exceptions. You can also choose to log specific errors in some catch blocks to study how often they occur in production.
+
+### react-native-file-logger
+
+A simple file-logger for React Native with configurable rolling policy, based on CocoaLumberjack on iOS and Logback on Android.
 
 ### react-native-svg
 

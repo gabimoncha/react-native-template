@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import CustomText from 'components/CustomText';
 import WifiOff from 'assets/wifi-off.svg';
 
-const NetworkError: React.FC = () => (
+const NetworkError = () => (
   <Container>
     <BodyContainer>
       <WifiOff />

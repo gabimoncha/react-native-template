@@ -3,7 +3,11 @@ import styled from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
 import CustomText from './CustomText';
 
-const LanguageButton: React.FC<{ language: 'en' | 'ro' }> = ({ language }) => {
+type Props = {
+  language: 'en' | 'ro';
+};
+
+const LanguageButton = ({ language }: Props) => {
   const { t, i18n } = useTranslation('languages');
 
   const onPress = () => {

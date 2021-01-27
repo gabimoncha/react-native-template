@@ -11,11 +11,7 @@ const WebView = React.lazy(() =>
 
 type ScreenRouteProp = RouteProp<RootStackParamList, 'RootWebView'>;
 
-type Props = {
-  route: ScreenRouteProp;
-};
-
-const CustomWebView: React.FC<Props> = () => {
+const CustomWebView = () => {
   const { url, title } = useRoute<ScreenRouteProp>().params;
 
   const source = { uri: url };
