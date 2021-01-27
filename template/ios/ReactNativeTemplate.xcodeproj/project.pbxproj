@@ -53,6 +53,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeTemplate/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ReactNativeTemplate-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactNativeTemplate-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ReactNativeTemplate-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactNativeTemplate-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B348565BFD82D045815DB55 /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig"; sourceTree = "<group>"; };
 		4E8397EA6F57D5B42BB0452E /* Pods-ReactNativeTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		52431778ABEA14A829059E67 /* libPods-ReactNativeTemplate-ReactNativeTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeTemplate-ReactNativeTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DCC417DD76523E375E6612 /* Pods-ReactNativeTemplate-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-tvOS/Pods-ReactNativeTemplate-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,13 +61,16 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeTemplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88258FE2FEFF7D2EB0DCD401 /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-ReactNativeTemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8844BF128B6FFFC69E3AD88D /* libPods-ReactNativeTemplate-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeTemplate-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7B8C522584BA827D2D8B3E /* Pods-ReactNativeTemplate.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate.staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate.staging.xcconfig"; sourceTree = "<group>"; };
 		C9DF9637C7226D836943F342 /* Pods-ReactNativeTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D66AFCE93DF0F4B98D30F1E0 /* Pods-ReactNativeTemplate-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-tvOS/Pods-ReactNativeTemplate-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D8DE77A7052EF5AC289E7D5A /* Pods-ReactNativeTemplate-tvOSTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-tvOSTests.staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-tvOSTests/Pods-ReactNativeTemplate-tvOSTests.staging.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F20FDFADBA8A8E93968EC097 /* Pods-ReactNativeTemplate-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-tvOSTests/Pods-ReactNativeTemplate-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F529FBEBBF9B6AC370A47DDF /* libPods-ReactNativeTemplate-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeTemplate-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C1483E99EC176601FFA75C /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-ReactNativeTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE3BB21F8F8B9D419FCB21D2 /* Pods-ReactNativeTemplate-tvOS.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-tvOS.staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-tvOS/Pods-ReactNativeTemplate-tvOS.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,10 @@
 				56DCC417DD76523E375E6612 /* Pods-ReactNativeTemplate-tvOS.release.xcconfig */,
 				0B3B2BAB1E20E447BCB19494 /* Pods-ReactNativeTemplate-tvOSTests.debug.xcconfig */,
 				F20FDFADBA8A8E93968EC097 /* Pods-ReactNativeTemplate-tvOSTests.release.xcconfig */,
+				AA7B8C522584BA827D2D8B3E /* Pods-ReactNativeTemplate.staging.xcconfig */,
+				4B348565BFD82D045815DB55 /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig */,
+				FE3BB21F8F8B9D419FCB21D2 /* Pods-ReactNativeTemplate-tvOS.staging.xcconfig */,
+				D8DE77A7052EF5AC289E7D5A /* Pods-ReactNativeTemplate-tvOSTests.staging.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -695,7 +703,7 @@
 		};
 		00E356F71AD99517003FC87E /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6C1483E99EC176601FFA75C /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.release.xcconfig */;
+			baseConfigurationReference = 4B348565BFD82D045815DB55 /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -897,7 +905,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E8397EA6F57D5B42BB0452E /* Pods-ReactNativeTemplate.release.xcconfig */;
+			baseConfigurationReference = AA7B8C522584BA827D2D8B3E /* Pods-ReactNativeTemplate.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -950,7 +958,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56DCC417DD76523E375E6612 /* Pods-ReactNativeTemplate-tvOS.release.xcconfig */;
+			baseConfigurationReference = FE3BB21F8F8B9D419FCB21D2 /* Pods-ReactNativeTemplate-tvOS.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1005,7 +1013,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F20FDFADBA8A8E93968EC097 /* Pods-ReactNativeTemplate-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = D8DE77A7052EF5AC289E7D5A /* Pods-ReactNativeTemplate-tvOSTests.staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
