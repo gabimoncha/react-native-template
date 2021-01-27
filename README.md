@@ -56,7 +56,22 @@ $ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 
 ## Optional Steps
 
-#### Customize notification appearance on Android.
+#### Setup deep linking scheme
+
+Implementation was based on react-navigation[instructions](https://reactnavigation.org/docs/deep-linking/#set-up-with-bare-react-native-projects).
+
+1. Update the prefix with wanted URI in `App.tsx`
+
+1. iOS
+
+Update `CFBundleURLName` and `CFBundleURLSchemes` to your desired URI
+
+1. Android
+
+Update `android:scheme` value inside `<data>` tag from the `<intent-filter>`
+
+
+#### Customize notification appearance on Android
 
 Starting Android 10 (API 29), notification icons should be glyphs. You need to follow this step to [customize the notification appearance](https://wix.github.io/react-native-notifications/docs/installation-android/#step-6-customize-the-appearance).
 
