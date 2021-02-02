@@ -45,7 +45,7 @@ Create a new project using the template.
 ### RN 0.63.4
 
 ```bash
-$ npx react-native init MyApp --template @gabrielmoncea/react-native-template
+npx react-native init MyApp --template @gabrielmoncea/react-native-template
 ```
 
 ## Road Map
