@@ -34,10 +34,15 @@ const Home = () => {
         <LanguageButton language={'en'} />
         <LanguageButton language={'ro'} />
       </View>
-      <CustomText fontWeight={'700'} textAlign={'center'} mt={60} mb={20}>
+      <CustomText
+        fontWeight={'700'}
+        textAlign={'center'}
+        mt={60}
+        mb={20}
+        testID={'hello'}>
         Hello React Native World!
       </CustomText>
-      <Button onPress={sendLoggedFiles}>
+      <Button onPress={sendLoggedFiles} testID={'sendLogs'}>
         <CustomText fontWeight={'700'} textAlign={'center'}>
           Send logged files!
         </CustomText>
