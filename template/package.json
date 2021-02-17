@@ -9,7 +9,9 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "bundle": "react-native-bundle-visualizer",
     "adb-reverse": "adb reverse tcp:8081 tcp:8081",
-    "postinstall": "patch-package && npx pod-install"
+    "postinstall": "patch-package && npx pod-install",
+    "detox:build-ios": "detox build --configuration ios",
+    "detox:build-android": "detox build --configuration android"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.13.3",

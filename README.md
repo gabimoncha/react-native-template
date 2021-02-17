@@ -51,6 +51,10 @@ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 ## Road Map
 
 - Finish Detox integration
+- welldone-software/why-did-you-render
+- react-native-in-app-review
+- react-native-modal
+- react-native-share
 - [Codepush Code Signing](https://github.com/microsoft/code-push/tree/v3.0.1/cli#code-signing)
 - Automated builds and distribution with Fastland & Appcenter
 

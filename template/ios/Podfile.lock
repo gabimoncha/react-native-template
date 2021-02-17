@@ -337,7 +337,7 @@ PODS:
   - RNFileLogger (0.2.1):
     - CocoaLumberjack
     - React
-  - RNGestureHandler (1.10.0):
+  - RNGestureHandler (1.10.1):
     - React-Core
   - RNPermissions (3.0.0):
     - React-Core
@@ -598,7 +598,7 @@ SPEC CHECKSUMS:
   RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
   RNFastImage: d4870d58f5936111c56218dbd7fcfc18e65b58ff
   RNFileLogger: 218ce00727e06709e1d5cf52054b5e1293f494ef
-  RNGestureHandler: 03f587ba19a7e2d9fe48fb9aa6e33ace5fd07dd5
+  RNGestureHandler: 5e58135436aacc1c5d29b75547d3d2b9430d052c
   RNPermissions: 99dd8d4a30ff13509b949ca63cd1f69edc461775
   RNReanimated: e03f7425cb7a38dcf1b644d680d1bfc91c3337ad
   RNScreens: b6c9607e6fe47c1b6e2f1910d2acd46dd7ecea3a
