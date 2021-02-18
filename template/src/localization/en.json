@@ -1,7 +1,11 @@
 {
-  "hello": "Hello React Native World!",
-  "no_internet": "No internet connection",
-  "check_connection": "Please check your internet connection settings and try again.",
+  "common": {
+    "hello": "Hello React Native World!",
+    "increment": "Increment",
+    "sendLogs": "Send logged files!",
+    "no_internet": "No internet connection",
+    "check_connection": "Please check your internet connection settings and try again."
+  },
   "languages": {
     "en": "English",
     "ro": "Romanian"

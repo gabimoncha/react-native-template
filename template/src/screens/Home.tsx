@@ -6,8 +6,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import CustomText from 'components/CustomText';
 import Smile from 'assets/smile.svg';
 import LanguageButton from 'components/LanguageButton';
+import Counter from 'components/Counter';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   const sendLoggedFiles = useCallback(() => {
     FileLogger.sendLogFilesByEmail({
       to: '<your_email@example.com>',
@@ -30,6 +34,7 @@ const Home = () => {
 
   return (
     <Container>
+      <Counter />
       <View>
         <LanguageButton language={'en'} />
         <LanguageButton language={'ro'} />
@@ -40,11 +45,11 @@ const Home = () => {
         mt={60}
         mb={20}
         testID={'hello'}>
-        Hello React Native World!
+        {t('hello')}
       </CustomText>
       <Button onPress={sendLoggedFiles} testID={'sendLogs'}>
         <CustomText fontWeight={'700'} textAlign={'center'}>
-          Send logged files!
+          {t('sendLogs')}
         </CustomText>
       </Button>
       <Smile />
@@ -61,7 +66,9 @@ const Container = styled(SafeAreaView)`
 const Button = styled.TouchableOpacity`
   margin: 20px;
   height: 48px;
-  width: 200px;
+  justify-content: space-evenly;
 `;
+
+Home.whyDidYouRender = true;
 
 export default Home;

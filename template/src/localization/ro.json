@@ -1,7 +1,11 @@
 {
-  "hello": "Salutări lumea React Native!",
-  "no_internet": "Nu aveți conexiune la internet",
-  "check_connection": "Vă rugăm să verificați setările conexiunii la internet și să încercați din nou.",
+  "common": {
+    "hello": "Salutări lumea React Native!",
+    "increment": "Incrementează",
+    "sendLogs": "Trimite fișierele cu loguri!",
+    "no_internet": "Nu aveți conexiune la internet",
+    "check_connection": "Vă rugăm să verificați setările conexiunii la internet și să încercați din nou."
+  },
   "languages": {
     "en": "Engleză",
     "ro": "Română"

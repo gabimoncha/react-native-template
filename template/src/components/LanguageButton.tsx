@@ -23,9 +23,9 @@ const LanguageButton = ({ language }: Props) => {
 
 const Container = styled.TouchableOpacity`
   margin: 8px 4px;
-  padding: 12px 8px;
+  padding: 8px;
   border-radius: 4px;
-  height: 24px;
+  height: 40px;
   justify-content: center;
   align-items: center;
 `;

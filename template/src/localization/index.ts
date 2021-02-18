@@ -15,7 +15,7 @@ const getDeviceLocale = (): string => {
     locale = settings.AppleLocale || settings.AppleLanguages[0] || 'en';
   } else if (Platform.OS === 'android') {
     locale = NativeModules.I18nManager.localeIdentifier;
-  } else locale = 'en'
+  } else locale = 'en';
 
   const [language] = locale.replace('_', '-').split('-'); // returned device locale can have '_' or '-'
 
@@ -52,6 +52,7 @@ i18n
   .init({
     fallbackLng: 'en',
     resources,
+    defaultNS: 'common',
     interpolation: {
       escapeValue: false, // react is already safe from xss
     },
