@@ -1,13 +1,5 @@
 import styled, { css } from 'styled-components/native';
-import {
-  space,
-  SpaceProps,
-  layout,
-  LayoutProps,
-  compose,
-  typography,
-  TypographyProps,
-} from 'styled-system';
+import { space, SpaceProps, layout, LayoutProps, compose, typography, TypographyProps } from 'styled-system';
 import { BLACK } from 'utils/colors';
 
 type TextProps = SpaceProps &
@@ -35,8 +27,7 @@ const CustomText = styled.Text<TextProps>`
         `
       : css``};
   text-align-vertical: center;
-  text-decoration-line: ${({ underline }) =>
-    underline ? 'underline' : 'none'};
+  text-decoration-line: ${({ underline }) => (underline ? 'underline' : 'none')};
   color: ${({ color }) => color};
   ${({ capitalize }) =>
     capitalize

@@ -27,11 +27,7 @@ export default function Router() {
       <Stack.Navigator screenOptions={screenOptions}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="RootWebView" component={CustomWebView} />
-        <Stack.Screen
-          name="NetworkError"
-          component={NetworkError}
-          options={gestureDisabled}
-        />
+        <Stack.Screen name="NetworkError" component={NetworkError} options={gestureDisabled} />
       </Stack.Navigator>
     </SafeAreaProvider>
   );

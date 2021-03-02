@@ -16,8 +16,7 @@ export default function useCustomBackBehaviour(action?: () => void) {
 
       BackHandler.addEventListener('hardwareBackPress', onBackPress);
 
-      return () =>
-        BackHandler.removeEventListener('hardwareBackPress', onBackPress);
+      return () => BackHandler.removeEventListener('hardwareBackPress', onBackPress);
     }, [action]),
   );
 }

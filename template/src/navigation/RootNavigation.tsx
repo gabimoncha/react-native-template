@@ -1,8 +1,5 @@
 import { createRef, MutableRefObject, useEffect } from 'react';
-import {
-  CommonActions,
-  NavigationContainerRef,
-} from '@react-navigation/native';
+import { CommonActions, NavigationContainerRef } from '@react-navigation/native';
 import { warn } from 'utils/console';
 
 export const isMountedRef = createRef<boolean>();

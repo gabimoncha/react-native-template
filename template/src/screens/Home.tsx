@@ -39,12 +39,7 @@ const Home = () => {
         <LanguageButton language={'en'} />
         <LanguageButton language={'ro'} />
       </View>
-      <CustomText
-        fontWeight={'700'}
-        textAlign={'center'}
-        mt={60}
-        mb={20}
-        testID={'hello'}>
+      <CustomText fontWeight={'700'} textAlign={'center'} mt={60} mb={20} testID={'hello'}>
         {t('hello')}
       </CustomText>
       <Button onPress={sendLoggedFiles} testID={'sendLogs'}>
