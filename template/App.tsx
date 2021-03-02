@@ -19,6 +19,8 @@ import { SENTRY_DSN, ENV } from '@env';
 import * as Sentry from '@sentry/react-native';
 import codePush, { CodePushOptions } from 'react-native-code-push';
 import NotificationManager from 'components/NotificationManager';
+import useNetworkError from 'src/hooks/useNetworkError';
+import useStartupTime from 'src/hooks/useStartupTime';
 
 enableScreens();
 
@@ -43,25 +45,11 @@ const linking: LinkingOptions = {
 };
 
 const App = () => {
-  useEffect(() => {
-    getTimeSinceStartup().then((time) => {
-      log({ startuptime: time });
-    });
-  }, []);
-
   useNavigationMounting();
 
-  const { isConnected } = useNetInfo();
+  useStartupTime();
 
-  useEffect(() => {
-    const route = getCurrentRoute();
-    console.log({ route, isConnected });
-    if (!isConnected && route) {
-      navigate('NetworkError');
-    } else if (route && route.name === 'NetworkError') {
-      goBack();
-    }
-  }, [isConnected]);
+  useNetworkError();
 
   return (
     <NotificationManager>
