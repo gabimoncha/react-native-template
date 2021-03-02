@@ -21,6 +21,7 @@ Preconfigured with
 - [AsyncStorage](https://github.com/react-native-community/async-storage) you're gonna install it anyway.
 - [NetInfo](https://github.com/react-native-netinfo/react-native-netinfo) Network Info API for Android, iOS, macOS & Windows
 - [FastImage](https://github.com/DylanVann/react-native-fast-image) its more performant
+- [react-native-testing-library](https://callstack.github.io/react-native-testing-library/) for unit and component tests.
 - [Detox](https://github.com/wix/Detox) for e2e.
 
 ## Contents
@@ -52,7 +53,6 @@ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 
 - Finish Detox integration
 - [Codepush Code Signing](https://github.com/microsoft/code-push/tree/v3.0.1/cli#code-signing)
-- Automated builds and distribution with Fastland & Appcenter
 
 ## Optional Steps
 
@@ -69,7 +69,6 @@ Update `CFBundleURLName` and `CFBundleURLSchemes` to your desired URI
 1. Android
 
 Update `android:scheme` value inside `<data>` tag from the `<intent-filter>`
-
 
 #### Customize notification appearance on Android
 
@@ -108,7 +107,6 @@ Insert your sentry DSN in each [.env](https://github.com/osamaq/react-native-tem
 #### Add project email for the FileLogger
 
 Update project email used by `sendLoggedFiles` method in `Home.tsx`
-
 
 ## Libraries
 
@@ -181,12 +179,17 @@ For caching simple data such as user preferences.
 ### NetInfo
 
 Network Info API for Android, iOS, macOS & Windows. It allows you to get information on:
-* Connection type
-* Connection quality
+
+- Connection type
+- Connection quality
 
 ### FastImage
 
 Replacement for the `<Image/>` component. Gives a performance boost and imaga preload.
+
+### react-native-testing-library
+
+For unit and component testing.
 
 ### Detox
 
