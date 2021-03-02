@@ -70,6 +70,12 @@ Update `CFBundleURLName` and `CFBundleURLSchemes` to your desired URI
 
 Update `android:scheme` value inside `<data>` tag from the `<intent-filter>`
 
+#### Enable Push Notification capability from Xcode
+
+You must be a member of the Apple Developer Program in order to enable Push Notifications
+
+![Instructions to add push notifications capability](https://i.stack.imgur.com/qsQTx.jpg)
+
 #### Customize notification appearance on Android
 
 Starting Android 10 (API 29), notification icons should be glyphs. You need to follow this step to [customize the notification appearance](https://wix.github.io/react-native-notifications/docs/installation-android/#step-6-customize-the-appearance).

@@ -1,15 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { StatusBar } from 'react-native';
 import { LinkingOptions, NavigationContainer } from '@react-navigation/native';
-import { getTimeSinceStartup } from 'react-native-startup-time';
-import { useNetInfo } from '@react-native-community/netinfo';
-import {
-  getCurrentRoute,
-  goBack,
-  navigate,
-  navigationRef,
-  useNavigationMounting,
-} from 'navigation/RootNavigation';
+import { navigationRef, useNavigationMounting } from 'navigation/RootNavigation';
 import { log } from 'utils/console';
 import 'localization';
 import Router from 'navigation/Router';
@@ -18,9 +10,9 @@ import { FileLogger } from 'react-native-file-logger';
 import { SENTRY_DSN, ENV } from '@env';
 import * as Sentry from '@sentry/react-native';
 import codePush, { CodePushOptions } from 'react-native-code-push';
-import NotificationManager from 'components/NotificationManager';
-import useNetworkError from 'src/hooks/useNetworkError';
-import useStartupTime from 'src/hooks/useStartupTime';
+import useNetworkError from 'hooks/useNetworkError';
+import useStartupTime from 'hooks/useStartupTime';
+import useNotifications from 'hooks/useNotifications';
 
 enableScreens();
 
@@ -45,6 +37,8 @@ const linking: LinkingOptions = {
 };
 
 const App = () => {
+  useNotifications();
+
   useNavigationMounting();
 
   useStartupTime();
@@ -52,12 +46,10 @@ const App = () => {
   useNetworkError();
 
   return (
-    <NotificationManager>
-      <NavigationContainer linking={linking} ref={navigationRef}>
-        <StatusBar barStyle="dark-content" />
-        <Router />
-      </NavigationContainer>
-    </NotificationManager>
+    <NavigationContainer linking={linking} ref={navigationRef}>
+      <StatusBar barStyle="dark-content" />
+      <Router />
+    </NavigationContainer>
   );
 };
 
