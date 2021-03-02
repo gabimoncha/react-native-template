@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { useNetInfo } from '@react-native-community/netinfo';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { WHITE } from 'utils/colors';
 import Home from 'screens/Home';
