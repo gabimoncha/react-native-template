@@ -2,6 +2,7 @@
 #import "RNNotifications.h"
 #import <React/RCTLinkingManager.h>
 #import <CodePush/CodePush.h>
+#import <Crisp/Crisp.h>
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
@@ -47,6 +48,7 @@ static void InitializeFlipper(UIApplication *application) {
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   [RNNotifications startMonitorNotifications];
+  [CrispSDK configureWithWebsiteID:@"YOUR_WEBSITE_ID"];
 
   return YES;
 }

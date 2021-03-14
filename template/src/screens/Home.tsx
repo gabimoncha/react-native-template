@@ -8,9 +8,13 @@ import Smile from 'assets/smile.svg';
 import LanguageButton from 'components/LanguageButton';
 import Counter from 'components/Counter';
 import { useTranslation } from 'react-i18next';
+import * as CrispChatSdk from 'react-native-crisp-chat-sdk';
 
 const Home = () => {
   const { t } = useTranslation();
+  React.useEffect(() => {
+    CrispChatSdk.setUserEmail('your_email@example.com');
+  }, []);
 
   const sendLoggedFiles = useCallback(() => {
     FileLogger.sendLogFilesByEmail({
@@ -42,6 +46,11 @@ const Home = () => {
       <CustomText fontWeight={'700'} textAlign={'center'} mt={60} mb={20} testID={'hello'}>
         {t('hello')}
       </CustomText>
+      <Button onPress={CrispChatSdk.show} testID={'crispChat'}>
+        <CustomText fontWeight={'700'} textAlign={'center'}>
+          {t('chat')}
+        </CustomText>
+      </Button>
       <Button onPress={sendLoggedFiles} testID={'sendLogs'}>
         <CustomText fontWeight={'700'} textAlign={'center'}>
           {t('sendLogs')}

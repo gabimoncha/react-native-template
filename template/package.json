@@ -31,6 +31,7 @@
     "react-i18next": "^11.8.8",
     "react-native": "0.63.4",
     "react-native-code-push": "^7.0.0",
+    "react-native-crisp-chat-sdk": "^0.6.0",
     "react-native-dotenv": "^2.5.0",
     "react-native-fast-image": "^8.3.4",
     "react-native-file-logger": "^0.2.1",

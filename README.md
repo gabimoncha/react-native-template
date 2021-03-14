@@ -13,14 +13,15 @@ Preconfigured with
 - [Wix React Native Notifications](https://github.com/wix/react-native-notifications) native notifications.
 - [react-native-permissions](https://github.com/zoontek/react-native-permissions) unified permissions api for iOS and Android.
 - [react-i18next](https://github.com/i18next/react-i18next) internationalization.
-- [Code Push](https://github.com/microsoft/react-native-code-push) syncronize JavaScript and Images with over-the-air updates
+- [Code Push](https://github.com/microsoft/react-native-code-push) syncronize JavaScript and Images with over-the-air updates.
+- [Crisp chat](https://github.com/walterholohan/react-native-crisp-chat-sdk) free live customer support.
 - [Sentry](https://github.com/getsentry/sentry-react-native) for debugging in production.
 - [react-native-file-logger](https://github.com/BeTomorrow/react-native-file-logger) to log important stuff.
 - [react-native-svg](https://github.com/react-native-community/react-native-svg) because svg.
 - [react-native-dotenv](https://github.com/goatandsheep/react-native-dotenv)
 - [AsyncStorage](https://github.com/react-native-community/async-storage) you're gonna install it anyway.
-- [NetInfo](https://github.com/react-native-netinfo/react-native-netinfo) Network Info API for Android, iOS, macOS & Windows
-- [FastImage](https://github.com/DylanVann/react-native-fast-image) its more performant
+- [NetInfo](https://github.com/react-native-netinfo/react-native-netinfo) Network Info API for Android, iOS, macOS & Windows.
+- [FastImage](https://github.com/DylanVann/react-native-fast-image) its more performant.
 - [react-native-testing-library](https://callstack.github.io/react-native-testing-library/) for unit and component tests.
 - [Detox](https://github.com/wix/Detox) for e2e.
 
@@ -92,6 +93,10 @@ Starting Android 10 (API 29), notification icons should be glyphs. You need to f
 
 You can retrieve this values by running `appcenter codepush deployment list -a <ownerName>/<appName> -k`
 
+#### Connect To Crisp chat
+
+Register an account and website on [the platform](https://crisp.chat). Go to Settings > Website settings > Select website > Setup Instructions > Copy Website ID and replace it in `AppDelegate.m` and `MainApplication.java`
+
 #### Connect To Sentry
 
 This template comes with [Sentry](https://github.com/getsentry/sentry-react-native), but its disabled until you connect your account.
@@ -161,6 +166,11 @@ Localization using hooks. [React Native example](https://github.com/i18next/reac
 A React Native app is composed of JavaScript files and any accompanying images, which are bundled together by the packager and distributed as part of a platform-specific binary (i.e. an .ipa or .apk file). Once the app is released, updating either the JavaScript code (e.g. making bug fixes, adding new features) or image assets, requires you to recompile and redistribute the entire binary, which of course, includes any review time associated with the store(s) you are publishing to.
 
 The CodePush plugin helps get product improvements in front of your end users instantly, by keeping your JavaScript and images synchronized with updates you release to the CodePush server. This way, your app gets the benefits of an offline mobile experience, as well as the "web-like" agility of side-loading updates as soon as they are available. It's a win-win!
+
+### Crisp chat
+
+A free alternative to Intercom or Zendesk, for startups and SMBs.
+[Crisp chat](https://crisp.chat)
 
 ### Sentry
 

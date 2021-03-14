@@ -2,6 +2,7 @@
   "common": {
     "hello": "Hello React Native World!",
     "increment": "Increment",
+    "chat": "Send me a message!",
     "sendLogs": "Send logged files!",
     "no_internet": "No internet connection",
     "check_connection": "Please check your internet connection settings and try again."
