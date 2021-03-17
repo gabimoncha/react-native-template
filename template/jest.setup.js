@@ -20,3 +20,18 @@ jest.mock('react-native-reanimated', () => {
 
 // Silence the warning: Animated: `useNativeDriver` is not supported because the native animated module is missing
 jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper');
+
+jest.mock('nanoid/non-secure', () => ({
+  nanoid: () => 'routeUniqId',
+}));
+
+const FRAME_TIME = 10;
+
+global.requestAnimationFrame = (cb) => {
+  setTimeout(cb, FRAME_TIME);
+};
+
+jest.mock('react-native/Libraries/Components/Switch/Switch', () => {
+  const mockComponent = require('react-native/jest/mockComponent');
+  return mockComponent('react-native/Libraries/Components/Switch/Switch');
+});
