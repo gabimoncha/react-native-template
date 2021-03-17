@@ -40,7 +40,11 @@ static void InitializeFlipper(UIApplication *application) {
                                                    moduleName:@"ReactNativeTemplate"
                                             initialProperties:nil];
 
-  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
+  if (@available(iOS 13.0, *)) {
+      rootView.backgroundColor = [UIColor systemBackgroundColor];
+  } else {
+      rootView.backgroundColor = [UIColor whiteColor];
+  }
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
@@ -48,7 +52,7 @@ static void InitializeFlipper(UIApplication *application) {
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   [RNNotifications startMonitorNotifications];
-  [CrispSDK configureWithWebsiteID:@"YOUR_WEBSITE_ID"];
+  [CrispSDK configureWithWebsiteID:@"03031a9e-75c2-486c-a69b-8a1174feb3aa"];
 
   return YES;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, useColorScheme } from 'react-native';
 import { LinkingOptions, NavigationContainer } from '@react-navigation/native';
 import { navigationRef, useNavigationMounting } from 'navigation/RootNavigation';
 import { log } from 'utils/console';
@@ -45,9 +45,11 @@ const App = () => {
 
   useNetworkError();
 
+  const isDarkMode = useColorScheme() === 'dark';
+
   return (
     <NavigationContainer linking={linking} ref={navigationRef}>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <Router />
     </NavigationContainer>
   );

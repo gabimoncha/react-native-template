@@ -10,7 +10,11 @@ target 'ReactNativeTemplate' do
 
   config = use_native_modules!
 
-  use_react_native!(:path => config["reactNativePath"])
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false
+  )
 
   target 'ReactNativeTemplateTests' do
     inherit! :complete
@@ -21,25 +25,16 @@ target 'ReactNativeTemplate' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable these next few lines.
-  use_flipper!({ 'Flipper' => '0.75.0' })
+  use_flipper!()
   post_install do |installer|
-    flipper_post_install(installer)
-    installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-        config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
-      end
-    end
-    installer.pods_project.build_configurations.each do |config|
-      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
-    end
-  end
-end
-
-target 'ReactNativeTemplate-tvOS' do
-  # Pods for ReactNativeTemplate-tvOS
-
-  target 'ReactNativeTemplate-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
+    react_native_post_install(installer)
+    # installer.pods_project.targets.each do |target|
+    #   target.build_configurations.each do |config|
+    #     config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
+    #   end
+    # end
+    # installer.pods_project.build_configurations.each do |config|
+    #   config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    # end
   end
 end

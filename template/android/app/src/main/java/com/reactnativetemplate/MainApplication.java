@@ -54,8 +54,7 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
-    Crisp.configure(getApplicationContext(),"YOUR_WEBSITE_ID");
-    // Crisp.configure(getApplicationContext(),"03031a9e-75c2-486c-a69b-8a1174feb3aa");
+    Crisp.configure(getApplicationContext(),"03031a9e-75c2-486c-a69b-8a1174feb3aa");
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
 
