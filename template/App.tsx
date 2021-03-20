@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, useColorScheme, View } from 'react-native';
+import { StatusBar, useColorScheme } from 'react-native';
 import { LinkingOptions, NavigationContainer } from '@react-navigation/native';
 import { navigationRef, useNavigationMounting } from 'navigation/RootNavigation';
 import { log } from 'utils/console';

@@ -8,7 +8,7 @@ const getStorybookUIRoot = () => {
   addDecorator(withKnobs);
 
   configure(() => {
-    require('./stories');
+    require('../src/components/stories');
   }, module);
   return getStorybookUI({});
 };
