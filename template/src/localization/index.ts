@@ -51,8 +51,9 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
+    fallbackNS: 'common',
     resources,
-    defaultNS: 'common',
+    nsSeparator: '.',
     interpolation: {
       escapeValue: false, // react is already safe from xss
     },

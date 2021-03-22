@@ -1,7 +1,5 @@
 import React from 'react';
-import { StatusBar, useColorScheme } from 'react-native';
-import { LinkingOptions, NavigationContainer } from '@react-navigation/native';
-import { navigationRef, useNavigationMounting } from 'navigation/RootNavigation';
+import { useNavigationMounting } from 'navigation/RootNavigation';
 import { log } from 'utils/console';
 import 'localization';
 import Router from 'navigation/Router';
@@ -29,13 +27,6 @@ if (typeof SENTRY_DSN === 'string' && SENTRY_DSN.length > 0) {
   });
 }
 
-const linking: LinkingOptions = {
-  prefixes: ['reactnativetemplate://'],
-  config: {
-    screens: {},
-  },
-};
-
 const App = () => {
   useNotifications();
 
@@ -45,14 +36,7 @@ const App = () => {
 
   useNetworkError();
 
-  const isDarkMode = useColorScheme() === 'dark';
-
-  return (
-    <NavigationContainer linking={linking} ref={navigationRef}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Router />
-    </NavigationContainer>
-  );
+  return <Router />;
 };
 
 let codePushOptions: CodePushOptions = {

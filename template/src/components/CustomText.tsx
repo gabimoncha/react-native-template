@@ -1,23 +1,19 @@
+import React, { PropsWithChildren } from 'react';
+import { useColorScheme, Text, TextProps } from 'react-native';
 import styled, { css } from 'styled-components/native';
 import { space, SpaceProps, layout, LayoutProps, compose, typography, TypographyProps } from 'styled-system';
-import { BLACK } from 'utils/colors';
+import { BLACK, WHITE } from 'utils/colors';
 
-type TextProps = SpaceProps &
-  TypographyProps &
-  LayoutProps & {
-    flex?: number | string;
-    textAlign?: string;
-    color?: string;
-    capitalize?: boolean;
-    fontSize?: number;
-    type?: string;
-    underline?: boolean;
-    debug?: boolean;
-    fontFamily?: string;
-    opacity?: number;
-  };
+interface StyleProps extends SpaceProps, TypographyProps, LayoutProps, TextProps {
+  flex?: number | string;
+  color?: string;
+  capitalize?: boolean;
+  underline?: boolean;
+  debug?: boolean;
+  opacity?: number;
+}
 
-const CustomText = styled.Text<TextProps>`
+const Container = styled(Text)<StyleProps>`
   ${compose(space, layout, typography)}
   opacity: ${({ opacity }) => opacity};
   ${({ debug }) =>
@@ -37,14 +33,22 @@ const CustomText = styled.Text<TextProps>`
       : ''}
 `;
 
-CustomText.defaultProps = {
-  color: BLACK,
+Container.defaultProps = {
   fontSize: 18,
   fontWeight: '600',
   capitalize: false,
   textAlign: 'left',
   underline: false,
   opacity: 1,
+};
+
+const CustomText = ({ children, ...props }: PropsWithChildren<StyleProps>) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <Container color={isDarkMode ? WHITE : BLACK} {...props}>
+      {children}
+    </Container>
+  );
 };
 
 export default CustomText;
