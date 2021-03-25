@@ -1,4 +1,4 @@
-# react-native-template
+# react-native-template ![npm](https://img.shields.io/npm/dw/@gabrielmoncea/react-native-template)
 
 An opinionated template with all the packages that take more than one `yarn add` to setup.
 
