@@ -1,1 +1,1 @@
-import './LanguageButton.stories';
+import './LanguageButton/stories';

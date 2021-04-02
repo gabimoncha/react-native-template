@@ -11,6 +11,7 @@ import codePush, { CodePushOptions } from 'react-native-code-push';
 import useNetworkError from 'hooks/useNetworkError';
 import useStartupTime from 'hooks/useStartupTime';
 import useNotifications from 'hooks/useNotifications';
+import useAppState from 'react-native-appstate-hook';
 
 enableScreens();
 
@@ -35,6 +36,12 @@ const App = () => {
   useStartupTime();
 
   useNetworkError();
+
+  useAppState({
+    onChange: (newAppState) => console.warn('App state changed to ', newAppState),
+    onForeground: () => console.warn('App went to Foreground'),
+    onBackground: () => console.warn('App went to background'),
+  });
 
   return <Router />;
 };

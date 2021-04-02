@@ -1,7 +1,7 @@
 {
   "name": "@gabrielmoncea/react-native-template",
   "version": "1.0.0",
-  "description": "An opinionated template with all the packages that take more than one `yarn add` to setup",
+  "description": "An opinionated template to bootstrap your next React Native app with all the time-wasting packages you need to have",
   "keywords": [
     "react",
     "native",

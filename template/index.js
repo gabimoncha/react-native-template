@@ -6,7 +6,7 @@ import { name as appName } from './app.json';
 import getStorybookUI from './storybook';
 
 let EntryPoint;
-const showStorybook = true;
+const showStorybook = false;
 
 if (showStorybook && __DEV__) {
   EntryPoint = getStorybookUI();

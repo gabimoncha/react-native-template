@@ -5,17 +5,20 @@ An opinionated template with all the packages that take more than one `yarn add`
 Preconfigured with
 
 - TypeScript
+- [Storybook](https://github.com/storybookjs/storybook/) The UI component explorer. Develop, document, & test React Native components
 - [React Query](https://github.com/tannerlinsley/react-query) for api calls
 - [Zustand](https://github.com/pmndrs/zustand) instead of Redux
 - [styled-components](https://github.com/styled-components/styled-components)
 - [styled-system](https://github.com/styled-system/styled-system)
 - [React Navigation](https://reactnavigation.org/) for navigation and deeplinking.
 - [Wix React Native Notifications](https://github.com/wix/react-native-notifications) native notifications.
+- [react-native-keychain](https://github.com/oblador/react-native-keychain) for Keychain/Keystore access.
 - [react-native-permissions](https://github.com/zoontek/react-native-permissions) unified permissions api for iOS and Android.
 - [react-i18next](https://github.com/i18next/react-i18next) internationalization.
 - [Code Push](https://github.com/microsoft/react-native-code-push) syncronize JavaScript and Images with over-the-air updates.
 - [Crisp chat](https://github.com/walterholohan/react-native-crisp-chat-sdk) free live customer support.
 - [Sentry](https://github.com/getsentry/sentry-react-native) for debugging in production.
+- [react-native-appstate-hook](https://github.com/amrlabib/react-native-appstate-hook) handle app state in your app.
 - [react-native-file-logger](https://github.com/BeTomorrow/react-native-file-logger) to log important stuff.
 - [react-native-svg](https://github.com/react-native-community/react-native-svg) because svg.
 - [react-native-dotenv](https://github.com/goatandsheep/react-native-dotenv)
@@ -24,6 +27,7 @@ Preconfigured with
 - [FastImage](https://github.com/DylanVann/react-native-fast-image) its more performant.
 - [react-native-testing-library](https://callstack.github.io/react-native-testing-library/) for unit and component tests.
 - [Detox](https://github.com/wix/Detox) for e2e.
+- [why-did-you-render](https://github.com/welldone-software/why-did-you-render) to avoid re-renders.
 
 ## Contents
 
@@ -44,7 +48,7 @@ Create a new project using the template.
 
 - **Note:** the command will fail if you have the global legacy react-native-cli installed. Make sure you uninstall it first. More info at [react-native-community/cli](https://github.com/react-native-community/cli#about).
 
-### RN 0.63.4
+### RN 0.64.0
 
 ```bash
 npx react-native init MyApp --template @gabrielmoncea/react-native-template
@@ -53,6 +57,7 @@ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 ## Road Map
 
 - Finish Detox integration
+- Add Docusaurs docs
 - [Codepush Code Signing](https://github.com/microsoft/code-push/tree/v3.0.1/cli#code-signing)
 
 ## Optional Steps
@@ -129,6 +134,10 @@ For type safety ¯\\_(ツ)_/¯
 
 But in all seriousness, if you are considering this template I assume you are a TypeScript fan. If you happen to be a JavaScript user, this template might be overwhelming. If you would like to start learning TypeScript, I suggest bootstrapping with this instead [react-native-community/react-native-template-typescript](https://github.com/react-native-community/react-native-template-typescript) so you can learn at your own pace.
 
+### Storybook
+
+Storybook is a development environment for UI components. It allows you to browse a component library, view the different states of each component, and interactively develop and test components
+
 ### React Query
 
 Hooks for fetching, caching and updating asynchronous data in React.
@@ -153,6 +162,10 @@ Routing and navigation for your React Native apps Platform-specific look-and-fee
 
 Handle all the aspects of push notifications for your app, including remote and local notifications, interactive notifications, silent notifications, and more.
 
+### react-native-keychain
+
+Save and use credentials from phone's Keychain/Keystore
+
 ### react-native-permissions
 
 A unified permissions API for React Native on iOS and Android. For iOS you have to the `Podfile` with permissions pod and update `Info.plist` with wanted permissions descriptions. For Android add wanted permissions in `AndroidManifest.xml`
@@ -175,6 +188,10 @@ A free alternative to Intercom or Zendesk, for startups and SMBs.
 ### Sentry
 
 Benefitial in debugging issues that occur only in release builds. You can view error stack traces for unhandled exceptions. You can also choose to log specific errors in some catch blocks to study how often they occur in production.
+
+### react-native-appstate-hook
+
+Custom react hook, built to handle iOS or Android appState in your react component.
 
 ### react-native-file-logger
 
@@ -211,6 +228,10 @@ For unit and component testing.
 
 For end-to-end testing.
 
+### why-did-you-render
+
+Fix avoidable re-renders
+
 ## Directory Structure
 
 ```
@@ -218,15 +239,51 @@ root
 ├── __tests__
 ├── android
 ├── ios
+├── storybook
+|   └── addons.js
+|   └── index.js
+|   └── rn_addons.js
 └── src
     └── components
-    |   └── CustomText.ts
+    |   └── Counter.tsx
+    |   └── CustomScreen.tsx
+    |   └── CustomText.tsx
+    |   └── LanguageButton.stories.tsx
+    |   └── LanguageButton.tsx
+    |   └── StatusBar.tsx
+    |   └── stories.ts
+    └── hooks
+    |   └── useCustomBackBehaviour.tsx
+    |   └── useNetworkError.tsx
+    |   └── useNotification.tsx
+    |   └── usePrevious.tsx
+    |   └── useStartupTime.tsx
+    └── localization
+    |   └── resources
+    |   |   └── en.json
+    |   |   └── index.ts
+    |   |   └── ro.json
+    |   └── index.tsx
+    └── modules
+    |   └── auth
+    |   |   └── hooks
+    |   |   |   └── useKeychainBiometrics.tsx
+    |   |   |   └── useKeychainCredentials.tsx
+    |   |   |   └── useSupportedBiometry.tsx
+    |   |   └── screens
+    |   |   |   └── index.tsx
+    |   |   |   └── Onboarding.tsx
+    |   |   |   └── ResetPassword.tsx
+    |   |   └── store
+    |   |   |   └── index.ts
+    |   └── <your_app_modules>
     └── navigation
     |   ├── RootNavigation.tsx
     |   └── Router.tsx
     └── screens
     |   ├── CustomWebView.tsx
     |   ├── Home.tsx
+    |   ├── index.ts
     |   └── NetworkError.tsx
     └── utils
         ├── colors.ts

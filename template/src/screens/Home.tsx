@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 import { FileLogger } from 'react-native-file-logger';
 import CustomText from 'components/CustomText';
 import Smile from 'assets/smile.svg';
-import LanguageButton from 'components/LanguageButton';
+import { LanguageButton } from 'components/LanguageButton';
 import Counter from 'components/Counter';
 import { useTranslation } from 'react-i18next';
 import * as CrispChatSdk from 'react-native-crisp-chat-sdk';
