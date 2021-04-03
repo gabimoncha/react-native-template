@@ -2,9 +2,14 @@
   "name": "@gabrielmoncea/react-native-template",
   "version": "1.1.2",
   "description": "An opinionated template to bootstrap your next React Native app with all the time-wasting packages you need to have",
+  "files": [
+    "template",
+    "template.config.js"
+  ],
   "keywords": [
-    "react",
-    "native",
+    "react-native",
+    "typescript",
+    "jest",
     "template",
     "boilerplate",
     "starter",
@@ -25,8 +30,7 @@
     "hooks",
     "startup",
     "time",
-    "fast",
-    "image",
+    "fast-image",
     "sentry"
   ],
   "author": "Gabriel Moncea <gabimoncha@gmail.com>",

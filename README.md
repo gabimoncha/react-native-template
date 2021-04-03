@@ -1,13 +1,14 @@
-# React Native template ![npm](https://img.shields.io/npm/dw/@gabrielmoncea/react-native-template)
+# :space_invader: React Native Template TypeScript with Goodies ![npm](https://img.shields.io/npm/dw/@gabrielmoncea/react-native-template)
 
 An opinionated template to bootstrap your next React Native app with all the time-wasting packages you need to have.
 
-## Contributions are Welcome! 🤝
+## :computer: Contributions are very welcome 🤝
 ### Let's build the best React Native template together 🚀
+Please check out the [contributing document](CONTRIBUTING.md).
 
 Preconfigured with
 
-- TypeScript
+- Synced with the recommended [TypeScript template](https://reactnative.dev/docs/typescript#getting-started-with-typescript)
 - [Storybook](https://github.com/storybookjs/storybook/) The UI component explorer. Develop, document, & test React Native components
 - [React Query](https://github.com/tannerlinsley/react-query) for api calls
 - [Zustand](https://github.com/pmndrs/zustand) instead of Redux
@@ -56,6 +57,12 @@ Create a new project using the template.
 ```bash
 npx react-native init MyApp --template @gabrielmoncea/react-native-template
 ```
+
+#### React Native <=> Template Version
+
+| React Native  	| Template  	|
+|---	            |---	        |
+| 0.64  	        | 1.1.2       |
 
 ## Road Map
 
