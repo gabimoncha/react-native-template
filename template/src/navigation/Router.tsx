@@ -17,7 +17,7 @@ type ParamList = CommonStackParamList & UserStackParamList & AuthStackParamList;
 export const Stack = createStackNavigator<ParamList>();
 
 const linking: LinkingOptions = {
-  prefixes: ['reactnativetemplate://'],
+  prefixes: ['helloworld://'],
   config: {
     screens: {},
   },

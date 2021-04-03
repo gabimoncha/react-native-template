@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* ReactNativeTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeTemplateTests.m */; };
+		00E356F31AD99517003FC87E /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HelloWorldTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		4EF0328671FA342817D0DBAC /* libPods-ReactNativeTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1109B563B8C51D5CE0ACFD8 /* libPods-ReactNativeTemplate.a */; };
-		50B59CE71D9C90F66995FD01 /* libPods-ReactNativeTemplate-ReactNativeTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7065328382B2A677B772875D /* libPods-ReactNativeTemplate-ReactNativeTemplateTests.a */; };
+		4EF0328671FA342817D0DBAC /* libPods-HelloWorld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1109B563B8C51D5CE0ACFD8 /* libPods-HelloWorld.a */; };
+		50B59CE71D9C90F66995FD01 /* libPods-HelloWorld-HelloWorldTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7065328382B2A677B772875D /* libPods-HelloWorld-HelloWorldTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		844C3E6625FD257200976EFA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C3E6525FD257200976EFA /* File.swift */; };
 /* End PBXBuildFile section */
@@ -23,35 +23,35 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = ReactNativeTemplate;
+			remoteInfo = HelloWorld;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* ReactNativeTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* ReactNativeTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeTemplateTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* ReactNativeTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativeTemplate/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactNativeTemplate/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeTemplate/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeTemplate/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeTemplate/main.m; sourceTree = "<group>"; };
-		39A637FA3F937AEFF7AB571B /* Pods-ReactNativeTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		7065328382B2A677B772875D /* libPods-ReactNativeTemplate-ReactNativeTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeTemplate-ReactNativeTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeTemplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		844C3E6425FD257100976EFA /* ReactNativeTemplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeTemplate-Bridging-Header.h"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HelloWorld/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = HelloWorld/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HelloWorld/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HelloWorld/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = HelloWorld/main.m; sourceTree = "<group>"; };
+		39A637FA3F937AEFF7AB571B /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		7065328382B2A677B772875D /* libPods-HelloWorld-HelloWorldTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloWorld-HelloWorldTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = HelloWorld/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		844C3E6425FD257100976EFA /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
 		844C3E6525FD257200976EFA /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		844C3EFF25FD26CB00976EFA /* ReactNativeTemplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ReactNativeTemplate.entitlements; path = ReactNativeTemplate/ReactNativeTemplate.entitlements; sourceTree = "<group>"; };
-		B1A44894EA6EB552075C9999 /* Pods-ReactNativeTemplate.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate.staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate.staging.xcconfig"; sourceTree = "<group>"; };
-		C210D93E7B922F92FA687D9E /* Pods-ReactNativeTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate.release.xcconfig"; sourceTree = "<group>"; };
-		E34E46225206319AFC374E57 /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig"; sourceTree = "<group>"; };
-		EC7DC478D6E34E47609FD84E /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-ReactNativeTemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		844C3EFF25FD26CB00976EFA /* HelloWorld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = HelloWorld.entitlements; path = HelloWorld/HelloWorld.entitlements; sourceTree = "<group>"; };
+		B1A44894EA6EB552075C9999 /* Pods-HelloWorld.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.staging.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.staging.xcconfig"; sourceTree = "<group>"; };
+		C210D93E7B922F92FA687D9E /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		E34E46225206319AFC374E57 /* Pods-HelloWorld-HelloWorldTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld-HelloWorldTests.staging.xcconfig"; path = "Target Support Files/Pods-HelloWorld-HelloWorldTests/Pods-HelloWorld-HelloWorldTests.staging.xcconfig"; sourceTree = "<group>"; };
+		EC7DC478D6E34E47609FD84E /* Pods-HelloWorld-HelloWorldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld-HelloWorldTests.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld-HelloWorldTests/Pods-HelloWorld-HelloWorldTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F1109B563B8C51D5CE0ACFD8 /* libPods-ReactNativeTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5D4321FB9E1B7CDB5DABC0E /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeTemplate-ReactNativeTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1109B563B8C51D5CE0ACFD8 /* libPods-HelloWorld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloWorld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D4321FB9E1B7CDB5DABC0E /* Pods-HelloWorld-HelloWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld-HelloWorldTests.release.xcconfig"; path = "Target Support Files/Pods-HelloWorld-HelloWorldTests/Pods-HelloWorld-HelloWorldTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50B59CE71D9C90F66995FD01 /* libPods-ReactNativeTemplate-ReactNativeTemplateTests.a in Frameworks */,
+				50B59CE71D9C90F66995FD01 /* libPods-HelloWorld-HelloWorldTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,20 +67,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF0328671FA342817D0DBAC /* libPods-ReactNativeTemplate.a in Frameworks */,
+				4EF0328671FA342817D0DBAC /* libPods-HelloWorld.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* ReactNativeTemplateTests */ = {
+		00E356EF1AD99517003FC87E /* HelloWorldTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* ReactNativeTemplateTests.m */,
+				00E356F21AD99517003FC87E /* HelloWorldTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = ReactNativeTemplateTests;
+			path = HelloWorldTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -91,10 +91,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* ReactNativeTemplate */ = {
+		13B07FAE1A68108700A75B9A /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				844C3EFF25FD26CB00976EFA /* ReactNativeTemplate.entitlements */,
+				844C3EFF25FD26CB00976EFA /* HelloWorld.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -103,7 +103,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = ReactNativeTemplate;
+			name = HelloWorld;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -111,8 +111,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				F1109B563B8C51D5CE0ACFD8 /* libPods-ReactNativeTemplate.a */,
-				7065328382B2A677B772875D /* libPods-ReactNativeTemplate-ReactNativeTemplateTests.a */,
+				F1109B563B8C51D5CE0ACFD8 /* libPods-HelloWorld.a */,
+				7065328382B2A677B772875D /* libPods-HelloWorld-HelloWorldTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,13 +128,13 @@
 			isa = PBXGroup;
 			children = (
 				844C3E6525FD257200976EFA /* File.swift */,
-				13B07FAE1A68108700A75B9A /* ReactNativeTemplate */,
+				13B07FAE1A68108700A75B9A /* HelloWorld */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* ReactNativeTemplateTests */,
+				00E356EF1AD99517003FC87E /* HelloWorldTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A3DAD4988204983FC150BDB6 /* Pods */,
-				844C3E6425FD257100976EFA /* ReactNativeTemplate-Bridging-Header.h */,
+				844C3E6425FD257100976EFA /* HelloWorld-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* ReactNativeTemplate.app */,
-				00E356EE1AD99517003FC87E /* ReactNativeTemplateTests.xctest */,
+				13B07F961A680F5B00A75B9A /* HelloWorld.app */,
+				00E356EE1AD99517003FC87E /* HelloWorldTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,12 +153,12 @@
 		A3DAD4988204983FC150BDB6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				39A637FA3F937AEFF7AB571B /* Pods-ReactNativeTemplate.debug.xcconfig */,
-				B1A44894EA6EB552075C9999 /* Pods-ReactNativeTemplate.staging.xcconfig */,
-				C210D93E7B922F92FA687D9E /* Pods-ReactNativeTemplate.release.xcconfig */,
-				EC7DC478D6E34E47609FD84E /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.debug.xcconfig */,
-				E34E46225206319AFC374E57 /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig */,
-				F5D4321FB9E1B7CDB5DABC0E /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.release.xcconfig */,
+				39A637FA3F937AEFF7AB571B /* Pods-HelloWorld.debug.xcconfig */,
+				B1A44894EA6EB552075C9999 /* Pods-HelloWorld.staging.xcconfig */,
+				C210D93E7B922F92FA687D9E /* Pods-HelloWorld.release.xcconfig */,
+				EC7DC478D6E34E47609FD84E /* Pods-HelloWorld-HelloWorldTests.debug.xcconfig */,
+				E34E46225206319AFC374E57 /* Pods-HelloWorld-HelloWorldTests.staging.xcconfig */,
+				F5D4321FB9E1B7CDB5DABC0E /* Pods-HelloWorld-HelloWorldTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -166,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* ReactNativeTemplateTests */ = {
+		00E356ED1AD99517003FC87E /* HelloWorldTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeTemplateTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HelloWorldTests" */;
 			buildPhases = (
 				37D6D417B16157CBF3D7DCFB /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -182,14 +182,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = ReactNativeTemplateTests;
-			productName = ReactNativeTemplateTests;
-			productReference = 00E356EE1AD99517003FC87E /* ReactNativeTemplateTests.xctest */;
+			name = HelloWorldTests;
+			productName = HelloWorldTests;
+			productReference = 00E356EE1AD99517003FC87E /* HelloWorldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* ReactNativeTemplate */ = {
+		13B07F861A680F5B00A75B9A /* HelloWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeTemplate" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "HelloWorld" */;
 			buildPhases = (
 				460B73115F682A38B3D17D0D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -204,9 +204,9 @@
 			);
 			dependencies = (
 			);
-			name = ReactNativeTemplate;
-			productName = ReactNativeTemplate;
-			productReference = 13B07F961A680F5B00A75B9A /* ReactNativeTemplate.app */;
+			name = HelloWorld;
+			productName = HelloWorld;
+			productReference = 13B07F961A680F5B00A75B9A /* HelloWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeTemplate" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "HelloWorld" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -241,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* ReactNativeTemplate */,
-				00E356ED1AD99517003FC87E /* ReactNativeTemplateTests */,
+				13B07F861A680F5B00A75B9A /* HelloWorld */,
+				00E356ED1AD99517003FC87E /* HelloWorldTests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,7 +296,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeTemplate-ReactNativeTemplateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HelloWorld-HelloWorldTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -318,7 +318,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeTemplate-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HelloWorld-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -331,7 +331,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Crisp/Crisp.framework/Crisp",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
@@ -342,7 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D66372E5349D3CC5B8D5BD4D /* [CP] Copy Pods Resources */ = {
@@ -351,7 +351,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -392,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeTemplate/Pods-ReactNativeTemplate-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EA94EC8C4755504611320E0E /* [CP] Copy Pods Resources */ = {
@@ -401,7 +401,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld-HelloWorldTests/Pods-HelloWorld-HelloWorldTests-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -442,7 +442,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorld-HelloWorldTests/Pods-HelloWorld-HelloWorldTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -470,7 +470,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld-HelloWorldTests/Pods-HelloWorld-HelloWorldTests-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Crisp/Crisp.framework/Crisp",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
@@ -481,7 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeTemplate-ReactNativeTemplateTests/Pods-ReactNativeTemplate-ReactNativeTemplateTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorld-HelloWorldTests/Pods-HelloWorld-HelloWorldTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -491,7 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* ReactNativeTemplateTests.m in Sources */,
+				00E356F31AD99517003FC87E /* HelloWorldTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +510,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* ReactNativeTemplate */;
+			target = 13B07F861A680F5B00A75B9A /* HelloWorld */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -518,7 +518,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC7DC478D6E34E47609FD84E /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.debug.xcconfig */;
+			baseConfigurationReference = EC7DC478D6E34E47609FD84E /* Pods-HelloWorld-HelloWorldTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,7 +526,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ReactNativeTemplateTests/Info.plist;
+				INFOPLIST_FILE = HelloWorldTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -536,18 +536,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeTemplate.app/ReactNativeTemplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorld.app/HelloWorld";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E34E46225206319AFC374E57 /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.staging.xcconfig */;
+			baseConfigurationReference = E34E46225206319AFC374E57 /* Pods-HelloWorld-HelloWorldTests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ReactNativeTemplateTests/Info.plist;
+				INFOPLIST_FILE = HelloWorldTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -557,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeTemplate.app/ReactNativeTemplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorld.app/HelloWorld";
 			};
 			name = Staging;
 		};
@@ -620,17 +620,17 @@
 		};
 		064FD27425B7600D0042EFDA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C210D93E7B922F92FA687D9E /* Pods-ReactNativeTemplate.release.xcconfig */;
+			baseConfigurationReference = C210D93E7B922F92FA687D9E /* Pods-HelloWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ReactNativeTemplate/ReactNativeTemplate.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HelloWorld/HelloWorld.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2D72BVRF6T;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				INFOPLIST_FILE = ReactNativeTemplate/Info.plist;
+				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -638,10 +638,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.gabrielmoncea.ReactNativeTemplate;
-				PRODUCT_NAME = ReactNativeTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = org.gabrielmoncea.HelloWorld;
+				PRODUCT_NAME = HelloWorld;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeTemplate-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorld-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = Universal;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -650,12 +650,12 @@
 		};
 		064FD27525B7600D0042EFDA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5D4321FB9E1B7CDB5DABC0E /* Pods-ReactNativeTemplate-ReactNativeTemplateTests.release.xcconfig */;
+			baseConfigurationReference = F5D4321FB9E1B7CDB5DABC0E /* Pods-HelloWorld-HelloWorldTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ReactNativeTemplateTests/Info.plist;
+				INFOPLIST_FILE = HelloWorldTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -665,34 +665,34 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeTemplate.app/ReactNativeTemplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorld.app/HelloWorld";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39A637FA3F937AEFF7AB571B /* Pods-ReactNativeTemplate.debug.xcconfig */;
+			baseConfigurationReference = 39A637FA3F937AEFF7AB571B /* Pods-HelloWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ReactNativeTemplate/ReactNativeTemplate.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HelloWorld/HelloWorld.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2D72BVRF6T;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				INFOPLIST_FILE = ReactNativeTemplate/Info.plist;
+				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.gabrielmoncea.ReactNativeTemplate;
-				PRODUCT_NAME = ReactNativeTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = org.gabrielmoncea.HelloWorld;
+				PRODUCT_NAME = HelloWorld;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeTemplate-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorld-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = Universal;
@@ -702,17 +702,17 @@
 		};
 		13B07F951A680F5B00A75B9A /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1A44894EA6EB552075C9999 /* Pods-ReactNativeTemplate.staging.xcconfig */;
+			baseConfigurationReference = B1A44894EA6EB552075C9999 /* Pods-HelloWorld.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ReactNativeTemplate/ReactNativeTemplate.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HelloWorld/HelloWorld.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2D72BVRF6T;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				INFOPLIST_FILE = ReactNativeTemplate/Info.plist;
+				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -720,10 +720,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.gabrielmoncea.ReactNativeTemplate;
-				PRODUCT_NAME = ReactNativeTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = org.gabrielmoncea.HelloWorld;
+				PRODUCT_NAME = HelloWorld;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeTemplate-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorld-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = Universal;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -852,7 +852,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeTemplateTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -862,7 +862,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeTemplate" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "HelloWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -872,7 +872,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeTemplate" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "HelloWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

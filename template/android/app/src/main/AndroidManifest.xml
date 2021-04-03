@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.reactnativetemplate">
+  package="com.helloworld">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -25,18 +25,18 @@
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
-            <!-- Accepts URIs that begin with "http://www.example.com/reactnativetemplate” -->
+            <!-- Accepts URIs that begin with "http://www.example.com.helloworld” -->
             <data android:scheme="http"
                   android:host="www.example.com"
-                  android:pathPrefix="/reactnativetemplate" />
+                  android:pathPrefix="/helloworld" />
             <!-- note that the leading "/" is required for pathPrefix-->
         </intent-filter>
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
-            <!-- Accepts URIs that begin with "reactnativetemplate://” -->
-            <data android:scheme="reactnativetemplate" />
+            <!-- Accepts URIs that begin with "helloworld://” -->
+            <data android:scheme="helloworld" />
         </intent-filter>
       </activity>
     </application>

@@ -3,7 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '11.0'
 
-target 'ReactNativeTemplate' do
+target 'HelloWorld' do
   # Pods for your app
   permissions_path = '../node_modules/react-native-permissions/ios'
   pod 'Permission-Notifications', :path => "#{permissions_path}/Notifications"
@@ -16,7 +16,7 @@ target 'ReactNativeTemplate' do
     :hermes_enabled => false
   )
 
-  target 'ReactNativeTemplateTests' do
+  target 'HelloWorldTests' do
     inherit! :complete
     # Pods for testing
   end

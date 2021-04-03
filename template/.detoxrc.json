@@ -4,8 +4,8 @@
   "apps": {
     "ios": {
       "type": "ios.app",
-      "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/ReactNativeTemplate.app",
-      "build": "xcodebuild -workspace ios/ReactNativeTemplate.xcworkspace -scheme ReactNativeTemplate -configuration ios -sdk iphonesimulator -derivedDataPath ios/build"
+      "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/HelloWorld.app",
+      "build": "xcodebuild -workspace ios/HelloWorld.xcworkspace -scheme HelloWorld -configuration ios -sdk iphonesimulator -derivedDataPath ios/build"
     },
     "android": {
       "type": "android.apk",

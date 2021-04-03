@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>ReactNativeTemplate</string>
+	<string>Hello Word</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>reactnativetemplate</string>
+			<string>helloworld</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>reactnativetemplate</string>
+				<string>helloworld</string>
 			</array>
 		</dict>
 	</array>
