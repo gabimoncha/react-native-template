@@ -74,7 +74,7 @@ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 
 ## Optional Steps
 
-#### Setup deep linking scheme
+#### Set up deep linking scheme
 
 Implementation was based on react-navigation[instructions](https://reactnavigation.org/docs/deep-linking/#set-up-with-bare-react-native-projects).
 
@@ -88,17 +88,22 @@ Update `CFBundleURLName` and `CFBundleURLSchemes` to your desired URI
 
 Update `android:scheme` value inside `<data>` tag from the `<intent-filter>`
 
-#### Enable Push Notification capability from Xcode
+#### Set up notifications
 
+1. Android
+Create a Firebase project, change bundle id, register your app in Firebase, replace configuration file android/app/google-services.json
+![Instructions to get the configuration file](https://firebase.google.com/docs/android/setup#console)
+
+1. iOS
+Enable Push Notification capability from Xcode
 You must be a member of the Apple Developer Program in order to enable Push Notifications
-
 ![Instructions to add push notifications capability](https://i.stack.imgur.com/qsQTx.jpg)
 
 #### Customize notification appearance on Android
 
 Starting Android 10 (API 29), notification icons should be glyphs. You need to follow this step to [customize the notification appearance](https://wix.github.io/react-native-notifications/docs/installation-android/#step-6-customize-the-appearance).
 
-#### Setup Code Push
+#### Set up Code Push
 
 1. You will need to have [AppCenter CLI](https://github.com/microsoft/appcenter-cli) installed
 
@@ -112,7 +117,7 @@ You can retrieve this values by running `appcenter codepush deployment list -a <
 
 #### Connect To Crisp chat
 
-Register an account and website on [the platform](https://crisp.chat). Go to Settings > Website settings > Select website > Setup Instructions > Copy Website ID and replace it in `AppDelegate.m` and `MainApplication.java`
+Register an account and website on [the platform](https://crisp.chat). Go to Settings > Website settings > Select website > Set up Instructions > Copy Website ID and replace it in `AppDelegate.m` and `MainApplication.java`
 
 #### Connect To Sentry
 

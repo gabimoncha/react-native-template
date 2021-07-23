@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Platform } from 'react-native';
 import {
   Notifications,
   Notification,
@@ -14,6 +15,13 @@ export default function useNotifications() {
 
     Notifications.events().registerRemoteNotificationsRegistered((event: Registered) => {
       // TODO: Send the token to my server so it could send back push notifications...
+      if (Platform.OS === 'android') {
+        warn(
+          "You are using the template's firebase project. Create a new firebase project and replace android/app/google-services.json",
+          '\n',
+          'Follow instructions here: https://firebase.google.com/docs/android/setup#console',
+        );
+      }
       log('Device Token Received', event.deviceToken);
     });
 
