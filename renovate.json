@@ -1,5 +1,41 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "group:all",
+    // Regular updates
+    "schedule:monthly"
+  ],
+  // Random assignee of PR
+  "assignees": ["gabrielmoncea"],
+  "separateMinorPatch": true,
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["babel+"],
+      "groupName": "eslint packages"
+    },
+    {
+      "matchPackagePatterns": ["^@storybook"],
+      "groupName": "@storybook packages"
+    },
+    {
+      "matchPackagePatterns": ["^@testing"],
+      "groupName": "@testing packages"
+    },
+    {
+      "matchPackagePatterns": ["^@types"],
+      "groupName": "@types packages"
+    },
+    {
+      "matchPackagePatterns": ["eslint+"],
+      "groupName": "eslint packages"
+    },
+    {
+      "matchPackagePatterns": ["^react-native"],
+      "groupName": "react-native packages"
+    },
+    {
+      "matchPackagePatterns": ["^@react-navigation"],
+      "groupName": "react-navigation packages"
+    }
   ]
 }
