@@ -18,7 +18,7 @@
     "detox:android": "./detox.sh android"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.14.1",
+    "@react-native-async-storage/async-storage": "1.15.5",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-native-community/netinfo": "^6.0.0",
     "@react-navigation/native": "^5.9.3",
