@@ -2726,10 +2726,10 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
-"@types/detox@^17.14.0":
-  version "17.14.0"
-  resolved "https://registry.yarnpkg.com/@types/detox/-/detox-17.14.0.tgz#42922b64a918c1d5be74a4f0f397138f4ffabb8f"
-  integrity sha512-/yrUvrPjmY5CHcBu6dq+f9vDk/6joR9i335LGenP4U+TPWPbZ1QuK4ERJN2gzb6rdMeTA1+fhm58ZUQ+B6EyXQ==
+"@types/detox@17.14.2":
+  version "17.14.2"
+  resolved "https://registry.yarnpkg.com/@types/detox/-/detox-17.14.2.tgz#2e3979fdd72c2e38600e5c7100cec412b6b66682"
+  integrity sha512-jkq/4Zk+YnVn3dCoPyPIdz3tiu/akUYy2JajGeEJdoD+tbA4rV2HRwVGRxidri8GlbUR/KDqs8BstY0iVzU4TA==
 
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
@@ -2860,10 +2860,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@^0.63.50":
-  version "0.63.52"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.52.tgz#449beb4a413ec0f2c172cbf676a95f5b0952adf4"
-  integrity sha512-sBXvvtJaIUSXQLDh9NZitx1KHkKUdBLZy34lFKJaIXtpHIh5OEbBXeyUTFBtFwjk/RD0tneAtUqsdhheZRzAzw==
+"@types/react-native@^0.64.0":
+  version "0.64.12"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.64.12.tgz#1c6a3226c26d7a5949cdf8878e6cfe95fe0951d6"
+  integrity sha512-sw6WGSaL219zqrgdb4kQUtFB9iGXC/LmecLZ+UUWEgwYvD0YH81FqWYmONa2HuTkOFAsxu2bK4DspkWRUHIABQ==
   dependencies:
     "@types/react" "*"
 
@@ -2888,10 +2888,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@>=16.9.0":
-  version "17.0.3"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.3.tgz#ba6e215368501ac3826951eef2904574c262cc79"
-  integrity sha512-wYOUxIgs2HZZ0ACNiIayItyluADNbONl7kt8lkLjVK8IitMH5QMyAh75Fwhmo37r1m7L2JaFj03sIfxBVDvRAg==
+"@types/react@*", "@types/react@>=16.9.0", "@types/react@^17":
+  version "17.0.14"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.14.tgz#f0629761ca02945c4e8fea99b8177f4c5c61fb0f"
+  integrity sha512-0WwKHUbWuQWOce61UexYuWTGuGY/8JvtUe/dtQ6lR4sZ3UiylHotJeWpf3ArP9+DSGUoLY3wbU59VyMrJps5VQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
