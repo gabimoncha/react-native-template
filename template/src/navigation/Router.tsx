@@ -2,7 +2,7 @@ import React from 'react';
 import { LinkingOptions, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { navigationRef } from 'navigation/RootNavigation';
+import { onNavigationReady, navigationRef, useNavigationUnmounting } from 'navigation/methods';
 import { WHITE } from 'utils/colors';
 import { authScreens, AuthStackParamList } from '@auth/screens';
 import { commonScreens, CommonStackParamList, userScreens, UserStackParamList } from 'screens';
@@ -26,8 +26,10 @@ const linking: LinkingOptions = {
 export default function Router() {
   const isLoggedIn = useStore((state) => !!state.token);
 
+  useNavigationUnmounting();
+
   return (
-    <NavigationContainer linking={linking} ref={navigationRef}>
+    <NavigationContainer linking={linking} ref={navigationRef} onReady={onNavigationReady}>
       <SafeAreaProvider>
         <Stack.Navigator screenOptions={screenOptions}>
           {Object.entries({

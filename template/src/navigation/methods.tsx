@@ -6,14 +6,20 @@ export const isMountedRef = createRef<boolean>();
 
 export const navigationRef = createRef<NavigationContainerRef>();
 
-export function useNavigationMounting() {
-  useEffect(() => {
-    (isMountedRef as MutableRefObject<boolean>).current = true;
+const queue = (cb: () => void) => {
+  setTimeout(cb, 1000);
+};
 
+export function useNavigationUnmounting() {
+  useEffect(() => {
     return () => {
       (isMountedRef as MutableRefObject<boolean>).current = false;
     };
   }, []);
+}
+
+export function onNavigationReady() {
+  (isMountedRef as MutableRefObject<boolean>).current = true;
 }
 
 export function navigate(name: string, params?: object) {
@@ -24,6 +30,7 @@ export function navigate(name: string, params?: object) {
     warn('Navigation not mounted. Cannot navigate to:', name);
     // You can decide what to do if the app hasn't mounted
     // You can ignore this, or add these actions to a queue you can call later
+    queue(() => navigate(name, params));
   }
 }
 
@@ -38,6 +45,7 @@ export function resetRoot(routeName: string, params?: object) {
     warn('Navigation not mounted. Cannot reset root to:', routeName);
     // You can decide what to do if the app hasn't mounted
     // You can ignore this, or add these actions to a queue you can call later
+    queue(() => resetRoot(routeName, params));
   }
 }
 
@@ -52,6 +60,7 @@ export function setParams(params: object, routeKey?: string) {
     warn('Navigation not mounted. Cannot set params to:', routeKey);
     // You can decide what to do if the app hasn't mounted
     // You can ignore this, or add these actions to a queue you can call later
+    queue(() => setParams(params, routeKey));
   }
 }
 

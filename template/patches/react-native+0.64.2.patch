@@ -1,0 +1,37 @@
+diff --git a/node_modules/react-native/jest/setup.js b/node_modules/react-native/jest/setup.js
+index bc27b00..2762ee0 100644
+--- a/node_modules/react-native/jest/setup.js
++++ b/node_modules/react-native/jest/setup.js
+@@ -323,6 +323,13 @@ jest
+         isRTL: false,
+         doLeftAndRightSwapInRTL: true,
+       }),
++      localeIdentifier: 'en_US',
++    },
++    SettingsManager: {
++      settings: {
++        AppleLocale: 'en-US',
++        AppleLanguages: ['en-US'],
++      },
+     },
+   }))
+   .mock('../Libraries/ReactNative/requireNativeComponent', () => {
+diff --git a/node_modules/react-native/scripts/.packager.env b/node_modules/react-native/scripts/.packager.env
+new file mode 100644
+index 0000000..361f5fb
+--- /dev/null
++++ b/node_modules/react-native/scripts/.packager.env
+@@ -0,0 +1 @@
++export RCT_METRO_PORT=8081
+diff --git a/node_modules/react-native/scripts/find-node.sh b/node_modules/react-native/scripts/find-node.sh
+index 2ef8cf8..9236b6a 100755
+--- a/node_modules/react-native/scripts/find-node.sh
++++ b/node_modules/react-native/scripts/find-node.sh
+@@ -5,6 +5,7 @@
+ # LICENSE file in the root directory of this source tree.
+ 
+ set -e
++unset PREFIX
+ 
+ # Define NVM_DIR and source the nvm.sh setup script
+ [ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"

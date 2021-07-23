@@ -3,7 +3,9 @@
 An opinionated template to bootstrap your next React Native app with all the time-wasting packages you need to have.
 
 ## :computer: Contributions are very welcome 🤝
+
 ### Let's build the best React Native template together 🚀
+
 Please check out the [contributing document](CONTRIBUTING.md).
 
 Preconfigured with
@@ -60,9 +62,9 @@ npx react-native init MyApp --template @gabrielmoncea/react-native-template
 
 #### React Native <=> Template Version
 
-| React Native  	| Template  	|
-|---	            |---	        |
-| 0.64  	        | 1.1.2       |
+| React Native | Template |
+| ------------ | -------- |
+| 0.64         | 1.1.2    |
 
 ## Road Map
 
@@ -255,19 +257,20 @@ root
 |   └── rn_addons.js
 └── src
     └── components
+    |   └── LanguageButton
+    |   |   └── index.tsx
+    |   |   └── LanguageButton.tsx
+    |   |   └── stories.tsx
     |   └── Counter.tsx
     |   └── CustomScreen.tsx
     |   └── CustomText.tsx
-    |   └── LanguageButton.stories.tsx
-    |   └── LanguageButton.tsx
     |   └── StatusBar.tsx
     |   └── stories.ts
     └── hooks
     |   └── useCustomBackBehaviour.tsx
-    |   └── useNetworkError.tsx
+    |   └── useMockApi.tsx
     |   └── useNotification.tsx
     |   └── usePrevious.tsx
-    |   └── useStartupTime.tsx
     └── localization
     |   └── resources
     |   |   └── en.json
@@ -288,7 +291,7 @@ root
     |   |   |   └── index.ts
     |   └── <your_app_modules>
     └── navigation
-    |   ├── RootNavigation.tsx
+    |   ├── navigatorMethods.tsx
     |   └── Router.tsx
     └── screens
     |   ├── CustomWebView.tsx

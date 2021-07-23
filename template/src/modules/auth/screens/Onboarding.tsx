@@ -6,6 +6,7 @@ import useKeychainBiometrics from '../hooks/useKeychainBiometrics';
 import useKeychainCredentials from '../hooks/useKeychainCredentials';
 import useStore from '../store';
 import { useNavigation } from '@react-navigation/core';
+import useMockApi from 'hooks/useMockApi';
 
 const Onboaring = () => {
   const { t } = useTranslation('onboarding');
@@ -14,12 +15,14 @@ const Onboaring = () => {
 
   const { userCredentials } = useKeychainCredentials();
 
+  const mockApi = useMockApi();
+
   const setToken = useStore((state) => state.setToken);
 
   useEffect(() => {
     if (userCredentials) {
       // Authentificate .then setToken
-      setToken('blabla');
+      mockApi(() => setToken('jwtToken'));
     }
   }, [userCredentials]);
 
@@ -30,8 +33,10 @@ const Onboaring = () => {
         testID={'btnSign'}
         onPress={() => {
           // Authentificate .then setToken .then setStoreCredentials
-          setToken('blabla');
-          setStoreCredentials(true);
+          mockApi(() => {
+            setToken('jwtToken');
+            setStoreCredentials(true);
+          });
         }}>
         {t('sign')}
       </CustomText>

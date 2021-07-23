@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Keychain from 'react-native-keychain';
 import useSupportedBiometry from './useSupportedBiometry';
-import { warn } from 'utils/console';
+import { log } from 'utils/console';
 
 export default function useKeychainCredentials() {
   const [userCredentials, setUserCredentials] = useState<false | Keychain.UserCredentials>(false);
@@ -26,8 +26,8 @@ export default function useKeychainCredentials() {
         if (isMounted.current) {
           setUserCredentials(credentials);
         }
-      } catch (e) {
-        warn('useKeychainCredentials:', e);
+      } catch(e) {
+        log('useKeychainCredentials ===>', e);
       }
     })();
 
