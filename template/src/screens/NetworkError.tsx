@@ -1,22 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNetInfo } from '@react-native-community/netinfo';
+import { useNavigation } from '@react-navigation/native';
 import styled from 'styled-components/native';
 import CustomText from 'components/CustomText';
-import WifiOff from 'assets/wifi-off.svg';
 import CustomScreen from 'components/CustomScreen';
+import WifiOff from 'assets/wifi-off.svg';
 
-const NetworkError = () => (
-  <CustomScreen justifyContent={'space-around'}>
-    <BodyContainer>
-      <WifiOff />
-      <CustomText fontWeight={'700'} textAlign={'center'} mt={60} mb={20}>
-        No internet connection
-      </CustomText>
-      <CustomText fontWeight={'500'} textAlign={'center'}>
-        Please check your internet connection settings and try again.
-      </CustomText>
-    </BodyContainer>
-  </CustomScreen>
-);
+const NetworkError = () => {
+  const { isConnected } = useNetInfo();
+  const { goBack } = useNavigation();
+
+  useEffect(() => {
+    if (isConnected) {
+      goBack();
+    }
+  }, [isConnected]);
+
+  return (
+    <CustomScreen justifyContent={'space-around'}>
+      <BodyContainer>
+        <WifiOff />
+        <CustomText fontWeight={'700'} textAlign={'center'} mt={60} mb={20}>
+          No internet connection
+        </CustomText>
+        <CustomText fontWeight={'500'} textAlign={'center'}>
+          Please check your internet connection settings and try again.
+        </CustomText>
+      </BodyContainer>
+    </CustomScreen>
+  );
+};
 
 const BodyContainer = styled.View`
   flex: 1;

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		4EF0328671FA342817D0DBAC /* libPods-HelloWorld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1109B563B8C51D5CE0ACFD8 /* libPods-HelloWorld.a */; };
 		50B59CE71D9C90F66995FD01 /* libPods-HelloWorld-HelloWorldTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7065328382B2A677B772875D /* libPods-HelloWorld-HelloWorldTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		844C3E6625FD257200976EFA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C3E6525FD257200976EFA /* File.swift */; };
+		843602F726AAD5CF0091E047 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843602F626AAD5CF0091E047 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		39A637FA3F937AEFF7AB571B /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		7065328382B2A677B772875D /* libPods-HelloWorld-HelloWorldTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloWorld-HelloWorldTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = HelloWorld/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		844C3E6425FD257100976EFA /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
-		844C3E6525FD257200976EFA /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		843602F626AAD5CF0091E047 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		843602F826AAD5F90091E047 /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
 		844C3EFF25FD26CB00976EFA /* HelloWorld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = HelloWorld.entitlements; path = HelloWorld/HelloWorld.entitlements; sourceTree = "<group>"; };
 		B1A44894EA6EB552075C9999 /* Pods-HelloWorld.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.staging.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.staging.xcconfig"; sourceTree = "<group>"; };
 		C210D93E7B922F92FA687D9E /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,14 +127,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				844C3E6525FD257200976EFA /* File.swift */,
+				843602F826AAD5F90091E047 /* HelloWorld-Bridging-Header.h */,
+				843602F626AAD5CF0091E047 /* File.swift */,
 				13B07FAE1A68108700A75B9A /* HelloWorld */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* HelloWorldTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A3DAD4988204983FC150BDB6 /* Pods */,
-				844C3E6425FD257100976EFA /* HelloWorld-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -500,7 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				844C3E6625FD257200976EFA /* File.swift in Sources */,
+				843602F726AAD5CF0091E047 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
