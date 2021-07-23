@@ -1,6 +1,6 @@
 {
   "name": "@gabrielmoncea/react-native-template",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "An opinionated template to bootstrap your next React Native app with all the time-wasting packages you need to have",
   "files": [
     "template",
