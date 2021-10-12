@@ -17,7 +17,7 @@ export default function useNotifications() {
       // TODO: Send the token to my server so it could send back push notifications...
       if (Platform.OS === 'android') {
         warn(
-          "You are using the template's firebase project. Create a new firebase project and replace android/app/google-services.json",
+          "You are using the template's firebase project. Create a new firebase project and replace the configuration file android/app/google-services.json",
           '\n',
           'Follow instructions here: https://firebase.google.com/docs/android/setup#console',
         );
