@@ -333,7 +333,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Crisp/Crisp.framework/Crisp",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -472,7 +472,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld-HelloWorldTests/Pods-HelloWorld-HelloWorldTests-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Crisp/Crisp.framework/Crisp",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

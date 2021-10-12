@@ -1,95 +1,86 @@
-import { createRef, MutableRefObject, useEffect } from 'react';
-import { CommonActions, NavigationContainerRef } from '@react-navigation/native';
-import { warn } from 'utils/console';
+import { CommonActions, createNavigationContainerRef } from '@react-navigation/native';
 
-export const isMountedRef = createRef<boolean>();
+import { RootStackParamList } from './types';
 
-export const navigationRef = createRef<NavigationContainerRef>();
+export const navigationRef = createNavigationContainerRef();
 
-const queue = (cb: () => void) => {
-  setTimeout(cb, 1000);
+/**
+ * Recursive function that delays the next call if the navigation is not yet mounted.
+ */
+const navigationMethod = (successCallback: () => unknown) => {
+  if (navigationRef.isReady()) {
+    return successCallback();
+  }
+
+  setTimeout(() => {
+    navigationMethod(successCallback);
+  }, 10);
 };
 
-export function useNavigationUnmounting() {
-  useEffect(() => {
-    return () => {
-      (isMountedRef as MutableRefObject<boolean>).current = false;
-    };
-  }, []);
+/**
+ * Navigate to a new route.
+ */
+export function navigate<T extends keyof RootStackParamList>(name: T, params?: RootStackParamList[T]) {
+  navigationMethod(() => {
+    // @ts-ignore Suspended complexity warning typescript.
+    navigationRef.navigate(name, params);
+  });
 }
 
-export function onNavigationReady() {
-  (isMountedRef as MutableRefObject<boolean>).current = true;
-}
-
-export function navigate(name: string, params?: object) {
-  if (isMountedRef.current && navigationRef.current) {
-    // Perform navigation if the app has mounted
-    navigationRef.current.navigate(name, params);
-  } else {
-    warn('Navigation not mounted. Cannot navigate to:', name);
-    // You can decide what to do if the app hasn't mounted
-    // You can ignore this, or add these actions to a queue you can call later
-    queue(() => navigate(name, params));
-  }
-}
-
+/**
+ * Navigate to a new route and reset the stack.
+ */
 export function resetRoot(routeName: string, params?: object) {
-  if (isMountedRef.current && navigationRef.current) {
-    // Perform navigation if the app has mounted
-    navigationRef.current.resetRoot({
-      index: 0,
+  navigationMethod(() => {
+    navigationRef.resetRoot({
       routes: [{ name: routeName, params }],
     });
-  } else {
-    warn('Navigation not mounted. Cannot reset root to:', routeName);
-    // You can decide what to do if the app hasn't mounted
-    // You can ignore this, or add these actions to a queue you can call later
-    queue(() => resetRoot(routeName, params));
-  }
+  });
 }
 
+/**
+ * Set params for the current route.
+ */
 export function setParams(params: object, routeKey?: string) {
-  if (isMountedRef.current && navigationRef.current) {
-    // Perform navigation if the app has mounted
-    navigationRef.current.dispatch({
+  navigationMethod(() => {
+    navigationRef.dispatch({
       ...CommonActions.setParams(params),
       source: routeKey,
     });
-  } else {
-    warn('Navigation not mounted. Cannot set params to:', routeKey);
-    // You can decide what to do if the app hasn't mounted
-    // You can ignore this, or add these actions to a queue you can call later
-    queue(() => setParams(params, routeKey));
-  }
+  });
 }
 
+/**
+ * Check if it's possible to go back.
+ */
 export function canGoBack() {
-  if (!isMountedRef.current || !navigationRef.current) return false;
-
-  return navigationRef.current.canGoBack();
+  return navigationMethod(navigationRef.canGoBack);
 }
 
+/**
+ * Go back to the previous route.
+ */
 export function goBack() {
-  if (!isMountedRef.current || !navigationRef.current) return false;
-
-  return navigationRef.current.goBack();
+  navigationMethod(navigationRef.goBack);
 }
 
+/**
+ * Returns the navigation state for all navigators in the navigator tree.
+ */
 export function getRootState() {
-  if (!isMountedRef.current || !navigationRef.current) return false;
-
-  return navigationRef.current.getRootState();
+  return navigationMethod(navigationRef.getRootState);
 }
 
+/**
+ * Returns the route object for the currently focused screen.
+ */
 export function getCurrentRoute() {
-  if (!isMountedRef.current || !navigationRef.current) return false;
-
-  return navigationRef.current.getCurrentRoute();
+  return navigationMethod(navigationRef.getCurrentRoute);
 }
 
+/**
+ * Checks if the current screen is focused.
+ */
 export function isFocused() {
-  if (!isMountedRef.current || !navigationRef.current) return false;
-
-  return navigationRef.current.isFocused;
+  return navigationMethod(navigationRef.isFocused);
 }

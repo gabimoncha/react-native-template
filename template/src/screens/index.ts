@@ -7,8 +7,8 @@ export type UserStackParamList = {
 };
 
 export type CommonStackParamList = {
-  WebView: { url: string; title: string };
   NetworkError: undefined;
+  WebView: { url: string; title: string };
 };
 
 const options = { gestureEnabled: false };
@@ -21,4 +21,3 @@ export const commonScreens = {
 export const userScreens = {
   Home: { component: HomeScreen },
 };
-
