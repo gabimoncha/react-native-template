@@ -11,5 +11,5 @@ else
 fi
 
 echo "Executing jest tests... with $WORKERS workers"
-npx jest --maxWorkers=$WORKERS;
+npx jest --maxWorkers=$WORKERS $@;
 exit
