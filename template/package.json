@@ -29,7 +29,7 @@
     "i18next": "^20.3.4",
     "react": "17.0.1",
     "react-i18next": "^11.8.8",
-    "react-native": "0.64.2",
+    "react-native": "0.68.0",
     "react-native-appstate-hook": "^1.0.5",
     "react-native-code-push": "^7.0.1",
     "react-native-crisp-chat-sdk": "^0.7.0",
