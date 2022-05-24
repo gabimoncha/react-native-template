@@ -1,0 +1,20 @@
+{
+  "common": {
+    "hello": "Hello React Native World!",
+    "increment": "Increment",
+    "chat": "Send me a message!",
+    "sendLogs": "Send logged files!",
+    "no_internet": "No internet connection",
+    "check_connection": "Please check your internet connection settings and try again.",
+    "go_back": "Go back",
+    "logout": "Log out"
+  },
+  "languages": {
+    "en": "English",
+    "ro": "Romanian"
+  },
+  "onboarding": {
+    "sign": "Sign up / Sign in",
+    "forgot": "Forgot my password"
+  }
+}

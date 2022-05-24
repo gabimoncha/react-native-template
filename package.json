@@ -1,0 +1,46 @@
+{
+  "name": "@gabimoncha/react-native-template",
+  "version": "1.1.5",
+  "description": "An opinionated template to bootstrap your next React Native app with all the time-wasting packages you need to have",
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "keywords": [
+    "react-native",
+    "typescript",
+    "jest",
+    "template",
+    "boilerplate",
+    "starter",
+    "typescript",
+    "absolute",
+    "imports",
+    "navigation",
+    "svg",
+    "webview",
+    "async",
+    "storage",
+    "styled",
+    "components",
+    "bundle",
+    "visualiser",
+    "husky",
+    "git",
+    "hooks",
+    "startup",
+    "time",
+    "fast-image",
+    "sentry"
+  ],
+  "author": "Gabriel Moncea <gabimoncha@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabimoncha/react-native-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabimoncha/react-native-template/issues"
+  },
+  "homepage": "https://github.com/gabimoncha/react-native-template"
+}

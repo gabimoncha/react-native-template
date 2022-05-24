@@ -1,0 +1,20 @@
+{
+  "common": {
+    "hello": "Salutări lumea React Native!",
+    "increment": "Incrementează",
+    "chat": "Trimite-mi un mesaj!",
+    "sendLogs": "Trimite fișierele cu loguri!",
+    "no_internet": "Nu aveți conexiune la internet",
+    "check_connection": "Vă rugăm să verificați setările conexiunii la internet și să încercați din nou.",
+    "go_back": "Înapoi",
+    "logout": "Ieșire"
+  },
+  "languages": {
+    "en": "Engleză",
+    "ro": "Română"
+  },
+  "onboarding": {
+    "sign": "Înregistrare / Autentificare",
+    "forgot": "Am uitat parola"
+  }
+}
